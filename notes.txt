@@ -1,0 +1,13 @@
+Things to do:
+
+Create math logic to convert percentage to letter grade
+Ex:
+  90 <= A <= 99
+  80 <= B <= 89
+  70 <= C <= 79
+  60 <= D <= 69
+   0 <= F <= 59
+
+Things needed:
+  6 Bit comparison logic
+  6 bit to hex / 7seg converter
