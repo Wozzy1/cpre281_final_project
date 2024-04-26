@@ -9,5 +9,47 @@ Ex:
    0 <= F <= 59
 
 Things needed:
-  6 Bit comparison logic
-  6 bit to hex / 7seg converter
+  7 Bit comparison logic
+  7 bit to hex / 7seg converter
+  
+  
+Storage:
+  Four 7-bit registers
+  
+  Register file (7 bit wires):
+    4 register files - 1 for each 7seg display
+	4 to 1 MUX for reading
+	4 to 2 decoder for writing
+
+
+module comparator (
+    input A1, A0, B1, B0,
+    output A_greater_B, A_equal_B, A_less_B
+);
+
+// A>B
+assign A_greater_B = (A1 & ~B1) | (A0 & ~B1 & ~B0) | (A1 & A0 & ~B0);
+
+// A=B
+assign A_equal_B = (A1 & ~A0 & ~B1 & ~B0) | (A1 & ~A0 & B1 & ~B0) |
+                   (A1 & A0 & B1 & B0) | (A1 & A0 & ~B1 & B0') |
+                   (A1 & ~B1' & (A0 & B0 | A0' & B0')) |
+                   (B1 & ~A1' & (A0 & B0 | A0' & B0'));
+
+// A<B
+assign A_less_B = (A1' & B1) | (A0' & B1 & B0) | (A1' & A0' & B0);
+
+endmodule
+
+module comparator8b (In1, In2, Gt, Lt, Eq); 
+input [7:0]  In1, In2; //The two 8-bit Inputs In1 and In2 
+output	Gt, Lt, Eq; //The Outputs of comparison 
+reg	Gt, Lt, Eq; 
+always @ (In1 or In2) //Check the state of the input lines 
+  begin 
+    Gt <= ( In1 > In2 )? 1'b1 : 1'b0; 
+    Lt <= ( In1 < In2 )? 1'b1 : 1'b0; 
+    Eq <= ( In1 == In2)? 1'b1 : 1'b0; 
+  end
+endmodule
+
