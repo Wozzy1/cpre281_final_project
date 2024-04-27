@@ -1,17 +1,93 @@
-|letterGenerator
-Greater <= comparator7b:inst.Gt
-Input[0] => comparator7b:inst.In1[0]
-Input[1] => comparator7b:inst.In1[1]
-Input[2] => comparator7b:inst.In1[2]
-Input[3] => comparator7b:inst.In1[3]
-Input[4] => comparator7b:inst.In1[4]
-Input[5] => comparator7b:inst.In1[5]
-Input[6] => comparator7b:inst.In1[6]
-Less <= comparator7b:inst.Lt
-Equal <= comparator7b:inst.Eq
+|letterGeneratorBDF
+F <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+PercentageInput[0] => comparator7b:comp8.In1[0]
+PercentageInput[0] => comparator7b:comp7.In1[0]
+PercentageInput[0] => comparator7b:comp6.In1[0]
+PercentageInput[0] => comparator7b:comp5.In1[0]
+PercentageInput[0] => comparator7b:comp4.In1[0]
+PercentageInput[0] => comparator7b:comp3.In1[0]
+PercentageInput[0] => comparator7b:comp11.In1[0]
+PercentageInput[0] => comparator7b:comp12.In1[0]
+PercentageInput[0] => comparator7b:comp1.In1[0]
+PercentageInput[0] => comparator7b:comp2.In1[0]
+PercentageInput[1] => comparator7b:comp8.In1[1]
+PercentageInput[1] => comparator7b:comp7.In1[1]
+PercentageInput[1] => comparator7b:comp6.In1[1]
+PercentageInput[1] => comparator7b:comp5.In1[1]
+PercentageInput[1] => comparator7b:comp4.In1[1]
+PercentageInput[1] => comparator7b:comp3.In1[1]
+PercentageInput[1] => comparator7b:comp11.In1[1]
+PercentageInput[1] => comparator7b:comp12.In1[1]
+PercentageInput[1] => comparator7b:comp1.In1[1]
+PercentageInput[1] => comparator7b:comp2.In1[1]
+PercentageInput[2] => comparator7b:comp8.In1[2]
+PercentageInput[2] => comparator7b:comp7.In1[2]
+PercentageInput[2] => comparator7b:comp6.In1[2]
+PercentageInput[2] => comparator7b:comp5.In1[2]
+PercentageInput[2] => comparator7b:comp4.In1[2]
+PercentageInput[2] => comparator7b:comp3.In1[2]
+PercentageInput[2] => comparator7b:comp11.In1[2]
+PercentageInput[2] => comparator7b:comp12.In1[2]
+PercentageInput[2] => comparator7b:comp1.In1[2]
+PercentageInput[2] => comparator7b:comp2.In1[2]
+PercentageInput[3] => comparator7b:comp8.In1[3]
+PercentageInput[3] => comparator7b:comp7.In1[3]
+PercentageInput[3] => comparator7b:comp6.In1[3]
+PercentageInput[3] => comparator7b:comp5.In1[3]
+PercentageInput[3] => comparator7b:comp4.In1[3]
+PercentageInput[3] => comparator7b:comp3.In1[3]
+PercentageInput[3] => comparator7b:comp11.In1[3]
+PercentageInput[3] => comparator7b:comp12.In1[3]
+PercentageInput[3] => comparator7b:comp1.In1[3]
+PercentageInput[3] => comparator7b:comp2.In1[3]
+PercentageInput[4] => comparator7b:comp8.In1[4]
+PercentageInput[4] => comparator7b:comp7.In1[4]
+PercentageInput[4] => comparator7b:comp6.In1[4]
+PercentageInput[4] => comparator7b:comp5.In1[4]
+PercentageInput[4] => comparator7b:comp4.In1[4]
+PercentageInput[4] => comparator7b:comp3.In1[4]
+PercentageInput[4] => comparator7b:comp11.In1[4]
+PercentageInput[4] => comparator7b:comp12.In1[4]
+PercentageInput[4] => comparator7b:comp1.In1[4]
+PercentageInput[4] => comparator7b:comp2.In1[4]
+PercentageInput[5] => comparator7b:comp8.In1[5]
+PercentageInput[5] => comparator7b:comp7.In1[5]
+PercentageInput[5] => comparator7b:comp6.In1[5]
+PercentageInput[5] => comparator7b:comp5.In1[5]
+PercentageInput[5] => comparator7b:comp4.In1[5]
+PercentageInput[5] => comparator7b:comp3.In1[5]
+PercentageInput[5] => comparator7b:comp11.In1[5]
+PercentageInput[5] => comparator7b:comp12.In1[5]
+PercentageInput[5] => comparator7b:comp1.In1[5]
+PercentageInput[5] => comparator7b:comp2.In1[5]
+PercentageInput[6] => comparator7b:comp8.In1[6]
+PercentageInput[6] => comparator7b:comp7.In1[6]
+PercentageInput[6] => comparator7b:comp6.In1[6]
+PercentageInput[6] => comparator7b:comp5.In1[6]
+PercentageInput[6] => comparator7b:comp4.In1[6]
+PercentageInput[6] => comparator7b:comp3.In1[6]
+PercentageInput[6] => comparator7b:comp11.In1[6]
+PercentageInput[6] => comparator7b:comp12.In1[6]
+PercentageInput[6] => comparator7b:comp1.In1[6]
+PercentageInput[6] => comparator7b:comp2.In1[6]
+D <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+C <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A <= inst.DB_MAX_OUTPUT_PORT_TYPE
+LetterOut[0] <= letterGate:inst20.out[0]
+LetterOut[1] <= letterGate:inst20.out[1]
+LetterOut[2] <= letterGate:inst20.out[2]
+LetterOut[3] <= letterGate:inst20.out[3]
+test[0] <= LPM_CONSTANT:CONST59.result[0]
+test[1] <= LPM_CONSTANT:CONST59.result[1]
+test[2] <= LPM_CONSTANT:CONST59.result[2]
+test[3] <= LPM_CONSTANT:CONST59.result[3]
+test[4] <= LPM_CONSTANT:CONST59.result[4]
+test[5] <= LPM_CONSTANT:CONST59.result[5]
+test[6] <= LPM_CONSTANT:CONST59.result[6]
 
 
-|letterGenerator|comparator7b:inst
+|letterGeneratorBDF|comparator7b:comp8
 In1[0] => LessThan0.IN7
 In1[0] => LessThan1.IN7
 In1[0] => Equal0.IN6
@@ -59,7 +135,355 @@ Lt <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
 Eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|letterGenerator|LPM_CONSTANT:inst1
+|letterGeneratorBDF|LPM_CONSTANT:CONST0
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <GND>
+result[5] <= <GND>
+result[6] <= <GND>
+
+
+|letterGeneratorBDF|comparator7b:comp7
+In1[0] => LessThan0.IN7
+In1[0] => LessThan1.IN7
+In1[0] => Equal0.IN6
+In1[1] => LessThan0.IN6
+In1[1] => LessThan1.IN6
+In1[1] => Equal0.IN5
+In1[2] => LessThan0.IN5
+In1[2] => LessThan1.IN5
+In1[2] => Equal0.IN4
+In1[3] => LessThan0.IN4
+In1[3] => LessThan1.IN4
+In1[3] => Equal0.IN3
+In1[4] => LessThan0.IN3
+In1[4] => LessThan1.IN3
+In1[4] => Equal0.IN2
+In1[5] => LessThan0.IN2
+In1[5] => LessThan1.IN2
+In1[5] => Equal0.IN1
+In1[6] => LessThan0.IN1
+In1[6] => LessThan1.IN1
+In1[6] => Equal0.IN0
+In2[0] => LessThan0.IN14
+In2[0] => LessThan1.IN14
+In2[0] => Equal0.IN13
+In2[1] => LessThan0.IN13
+In2[1] => LessThan1.IN13
+In2[1] => Equal0.IN12
+In2[2] => LessThan0.IN12
+In2[2] => LessThan1.IN12
+In2[2] => Equal0.IN11
+In2[3] => LessThan0.IN11
+In2[3] => LessThan1.IN11
+In2[3] => Equal0.IN10
+In2[4] => LessThan0.IN10
+In2[4] => LessThan1.IN10
+In2[4] => Equal0.IN9
+In2[5] => LessThan0.IN9
+In2[5] => LessThan1.IN9
+In2[5] => Equal0.IN8
+In2[6] => LessThan0.IN8
+In2[6] => LessThan1.IN8
+In2[6] => Equal0.IN7
+Gt <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letterGeneratorBDF|LPM_CONSTANT:CONST59
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <VCC>
+result[4] <= <VCC>
+result[5] <= <VCC>
+result[6] <= <GND>
+
+
+|letterGeneratorBDF|comparator7b:comp6
+In1[0] => LessThan0.IN7
+In1[0] => LessThan1.IN7
+In1[0] => Equal0.IN6
+In1[1] => LessThan0.IN6
+In1[1] => LessThan1.IN6
+In1[1] => Equal0.IN5
+In1[2] => LessThan0.IN5
+In1[2] => LessThan1.IN5
+In1[2] => Equal0.IN4
+In1[3] => LessThan0.IN4
+In1[3] => LessThan1.IN4
+In1[3] => Equal0.IN3
+In1[4] => LessThan0.IN3
+In1[4] => LessThan1.IN3
+In1[4] => Equal0.IN2
+In1[5] => LessThan0.IN2
+In1[5] => LessThan1.IN2
+In1[5] => Equal0.IN1
+In1[6] => LessThan0.IN1
+In1[6] => LessThan1.IN1
+In1[6] => Equal0.IN0
+In2[0] => LessThan0.IN14
+In2[0] => LessThan1.IN14
+In2[0] => Equal0.IN13
+In2[1] => LessThan0.IN13
+In2[1] => LessThan1.IN13
+In2[1] => Equal0.IN12
+In2[2] => LessThan0.IN12
+In2[2] => LessThan1.IN12
+In2[2] => Equal0.IN11
+In2[3] => LessThan0.IN11
+In2[3] => LessThan1.IN11
+In2[3] => Equal0.IN10
+In2[4] => LessThan0.IN10
+In2[4] => LessThan1.IN10
+In2[4] => Equal0.IN9
+In2[5] => LessThan0.IN9
+In2[5] => LessThan1.IN9
+In2[5] => Equal0.IN8
+In2[6] => LessThan0.IN8
+In2[6] => LessThan1.IN8
+In2[6] => Equal0.IN7
+Gt <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letterGeneratorBDF|LPM_CONSTANT:CONST60
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <VCC>
+result[5] <= <VCC>
+result[6] <= <GND>
+
+
+|letterGeneratorBDF|comparator7b:comp5
+In1[0] => LessThan0.IN7
+In1[0] => LessThan1.IN7
+In1[0] => Equal0.IN6
+In1[1] => LessThan0.IN6
+In1[1] => LessThan1.IN6
+In1[1] => Equal0.IN5
+In1[2] => LessThan0.IN5
+In1[2] => LessThan1.IN5
+In1[2] => Equal0.IN4
+In1[3] => LessThan0.IN4
+In1[3] => LessThan1.IN4
+In1[3] => Equal0.IN3
+In1[4] => LessThan0.IN3
+In1[4] => LessThan1.IN3
+In1[4] => Equal0.IN2
+In1[5] => LessThan0.IN2
+In1[5] => LessThan1.IN2
+In1[5] => Equal0.IN1
+In1[6] => LessThan0.IN1
+In1[6] => LessThan1.IN1
+In1[6] => Equal0.IN0
+In2[0] => LessThan0.IN14
+In2[0] => LessThan1.IN14
+In2[0] => Equal0.IN13
+In2[1] => LessThan0.IN13
+In2[1] => LessThan1.IN13
+In2[1] => Equal0.IN12
+In2[2] => LessThan0.IN12
+In2[2] => LessThan1.IN12
+In2[2] => Equal0.IN11
+In2[3] => LessThan0.IN11
+In2[3] => LessThan1.IN11
+In2[3] => Equal0.IN10
+In2[4] => LessThan0.IN10
+In2[4] => LessThan1.IN10
+In2[4] => Equal0.IN9
+In2[5] => LessThan0.IN9
+In2[5] => LessThan1.IN9
+In2[5] => Equal0.IN8
+In2[6] => LessThan0.IN8
+In2[6] => LessThan1.IN8
+In2[6] => Equal0.IN7
+Gt <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letterGeneratorBDF|LPM_CONSTANT:CONST69
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <GND>
+result[4] <= <GND>
+result[5] <= <GND>
+result[6] <= <VCC>
+
+
+|letterGeneratorBDF|comparator7b:comp4
+In1[0] => LessThan0.IN7
+In1[0] => LessThan1.IN7
+In1[0] => Equal0.IN6
+In1[1] => LessThan0.IN6
+In1[1] => LessThan1.IN6
+In1[1] => Equal0.IN5
+In1[2] => LessThan0.IN5
+In1[2] => LessThan1.IN5
+In1[2] => Equal0.IN4
+In1[3] => LessThan0.IN4
+In1[3] => LessThan1.IN4
+In1[3] => Equal0.IN3
+In1[4] => LessThan0.IN3
+In1[4] => LessThan1.IN3
+In1[4] => Equal0.IN2
+In1[5] => LessThan0.IN2
+In1[5] => LessThan1.IN2
+In1[5] => Equal0.IN1
+In1[6] => LessThan0.IN1
+In1[6] => LessThan1.IN1
+In1[6] => Equal0.IN0
+In2[0] => LessThan0.IN14
+In2[0] => LessThan1.IN14
+In2[0] => Equal0.IN13
+In2[1] => LessThan0.IN13
+In2[1] => LessThan1.IN13
+In2[1] => Equal0.IN12
+In2[2] => LessThan0.IN12
+In2[2] => LessThan1.IN12
+In2[2] => Equal0.IN11
+In2[3] => LessThan0.IN11
+In2[3] => LessThan1.IN11
+In2[3] => Equal0.IN10
+In2[4] => LessThan0.IN10
+In2[4] => LessThan1.IN10
+In2[4] => Equal0.IN9
+In2[5] => LessThan0.IN9
+In2[5] => LessThan1.IN9
+In2[5] => Equal0.IN8
+In2[6] => LessThan0.IN8
+In2[6] => LessThan1.IN8
+In2[6] => Equal0.IN7
+Gt <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letterGeneratorBDF|LPM_CONSTANT:CONST70
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <GND>
+result[4] <= <GND>
+result[5] <= <GND>
+result[6] <= <VCC>
+
+
+|letterGeneratorBDF|comparator7b:comp3
+In1[0] => LessThan0.IN7
+In1[0] => LessThan1.IN7
+In1[0] => Equal0.IN6
+In1[1] => LessThan0.IN6
+In1[1] => LessThan1.IN6
+In1[1] => Equal0.IN5
+In1[2] => LessThan0.IN5
+In1[2] => LessThan1.IN5
+In1[2] => Equal0.IN4
+In1[3] => LessThan0.IN4
+In1[3] => LessThan1.IN4
+In1[3] => Equal0.IN3
+In1[4] => LessThan0.IN3
+In1[4] => LessThan1.IN3
+In1[4] => Equal0.IN2
+In1[5] => LessThan0.IN2
+In1[5] => LessThan1.IN2
+In1[5] => Equal0.IN1
+In1[6] => LessThan0.IN1
+In1[6] => LessThan1.IN1
+In1[6] => Equal0.IN0
+In2[0] => LessThan0.IN14
+In2[0] => LessThan1.IN14
+In2[0] => Equal0.IN13
+In2[1] => LessThan0.IN13
+In2[1] => LessThan1.IN13
+In2[1] => Equal0.IN12
+In2[2] => LessThan0.IN12
+In2[2] => LessThan1.IN12
+In2[2] => Equal0.IN11
+In2[3] => LessThan0.IN11
+In2[3] => LessThan1.IN11
+In2[3] => Equal0.IN10
+In2[4] => LessThan0.IN10
+In2[4] => LessThan1.IN10
+In2[4] => Equal0.IN9
+In2[5] => LessThan0.IN9
+In2[5] => LessThan1.IN9
+In2[5] => Equal0.IN8
+In2[6] => LessThan0.IN8
+In2[6] => LessThan1.IN8
+In2[6] => Equal0.IN7
+Gt <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letterGeneratorBDF|LPM_CONSTANT:CONST79
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <GND>
+result[5] <= <GND>
+result[6] <= <VCC>
+
+
+|letterGeneratorBDF|comparator7b:comp11
+In1[0] => LessThan0.IN7
+In1[0] => LessThan1.IN7
+In1[0] => Equal0.IN6
+In1[1] => LessThan0.IN6
+In1[1] => LessThan1.IN6
+In1[1] => Equal0.IN5
+In1[2] => LessThan0.IN5
+In1[2] => LessThan1.IN5
+In1[2] => Equal0.IN4
+In1[3] => LessThan0.IN4
+In1[3] => LessThan1.IN4
+In1[3] => Equal0.IN3
+In1[4] => LessThan0.IN3
+In1[4] => LessThan1.IN3
+In1[4] => Equal0.IN2
+In1[5] => LessThan0.IN2
+In1[5] => LessThan1.IN2
+In1[5] => Equal0.IN1
+In1[6] => LessThan0.IN1
+In1[6] => LessThan1.IN1
+In1[6] => Equal0.IN0
+In2[0] => LessThan0.IN14
+In2[0] => LessThan1.IN14
+In2[0] => Equal0.IN13
+In2[1] => LessThan0.IN13
+In2[1] => LessThan1.IN13
+In2[1] => Equal0.IN12
+In2[2] => LessThan0.IN12
+In2[2] => LessThan1.IN12
+In2[2] => Equal0.IN11
+In2[3] => LessThan0.IN11
+In2[3] => LessThan1.IN11
+In2[3] => Equal0.IN10
+In2[4] => LessThan0.IN10
+In2[4] => LessThan1.IN10
+In2[4] => Equal0.IN9
+In2[5] => LessThan0.IN9
+In2[5] => LessThan1.IN9
+In2[5] => Equal0.IN8
+In2[6] => LessThan0.IN8
+In2[6] => LessThan1.IN8
+In2[6] => Equal0.IN7
+Gt <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letterGeneratorBDF|LPM_CONSTANT:CONST80
 result[0] <= <GND>
 result[1] <= <VCC>
 result[2] <= <GND>
@@ -67,5 +491,191 @@ result[3] <= <VCC>
 result[4] <= <VCC>
 result[5] <= <GND>
 result[6] <= <VCC>
+
+
+|letterGeneratorBDF|comparator7b:comp12
+In1[0] => LessThan0.IN7
+In1[0] => LessThan1.IN7
+In1[0] => Equal0.IN6
+In1[1] => LessThan0.IN6
+In1[1] => LessThan1.IN6
+In1[1] => Equal0.IN5
+In1[2] => LessThan0.IN5
+In1[2] => LessThan1.IN5
+In1[2] => Equal0.IN4
+In1[3] => LessThan0.IN4
+In1[3] => LessThan1.IN4
+In1[3] => Equal0.IN3
+In1[4] => LessThan0.IN3
+In1[4] => LessThan1.IN3
+In1[4] => Equal0.IN2
+In1[5] => LessThan0.IN2
+In1[5] => LessThan1.IN2
+In1[5] => Equal0.IN1
+In1[6] => LessThan0.IN1
+In1[6] => LessThan1.IN1
+In1[6] => Equal0.IN0
+In2[0] => LessThan0.IN14
+In2[0] => LessThan1.IN14
+In2[0] => Equal0.IN13
+In2[1] => LessThan0.IN13
+In2[1] => LessThan1.IN13
+In2[1] => Equal0.IN12
+In2[2] => LessThan0.IN12
+In2[2] => LessThan1.IN12
+In2[2] => Equal0.IN11
+In2[3] => LessThan0.IN11
+In2[3] => LessThan1.IN11
+In2[3] => Equal0.IN10
+In2[4] => LessThan0.IN10
+In2[4] => LessThan1.IN10
+In2[4] => Equal0.IN9
+In2[5] => LessThan0.IN9
+In2[5] => LessThan1.IN9
+In2[5] => Equal0.IN8
+In2[6] => LessThan0.IN8
+In2[6] => LessThan1.IN8
+In2[6] => Equal0.IN7
+Gt <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letterGeneratorBDF|LPM_CONSTANT:CONST89
+result[0] <= <VCC>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <VCC>
+result[4] <= <VCC>
+result[5] <= <GND>
+result[6] <= <VCC>
+
+
+|letterGeneratorBDF|comparator7b:comp1
+In1[0] => LessThan0.IN7
+In1[0] => LessThan1.IN7
+In1[0] => Equal0.IN6
+In1[1] => LessThan0.IN6
+In1[1] => LessThan1.IN6
+In1[1] => Equal0.IN5
+In1[2] => LessThan0.IN5
+In1[2] => LessThan1.IN5
+In1[2] => Equal0.IN4
+In1[3] => LessThan0.IN4
+In1[3] => LessThan1.IN4
+In1[3] => Equal0.IN3
+In1[4] => LessThan0.IN3
+In1[4] => LessThan1.IN3
+In1[4] => Equal0.IN2
+In1[5] => LessThan0.IN2
+In1[5] => LessThan1.IN2
+In1[5] => Equal0.IN1
+In1[6] => LessThan0.IN1
+In1[6] => LessThan1.IN1
+In1[6] => Equal0.IN0
+In2[0] => LessThan0.IN14
+In2[0] => LessThan1.IN14
+In2[0] => Equal0.IN13
+In2[1] => LessThan0.IN13
+In2[1] => LessThan1.IN13
+In2[1] => Equal0.IN12
+In2[2] => LessThan0.IN12
+In2[2] => LessThan1.IN12
+In2[2] => Equal0.IN11
+In2[3] => LessThan0.IN11
+In2[3] => LessThan1.IN11
+In2[3] => Equal0.IN10
+In2[4] => LessThan0.IN10
+In2[4] => LessThan1.IN10
+In2[4] => Equal0.IN9
+In2[5] => LessThan0.IN9
+In2[5] => LessThan1.IN9
+In2[5] => Equal0.IN8
+In2[6] => LessThan0.IN8
+In2[6] => LessThan1.IN8
+In2[6] => Equal0.IN7
+Gt <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letterGeneratorBDF|LPM_CONSTANT:CONST90
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <VCC>
+result[4] <= <VCC>
+result[5] <= <GND>
+result[6] <= <VCC>
+
+
+|letterGeneratorBDF|comparator7b:comp2
+In1[0] => LessThan0.IN7
+In1[0] => LessThan1.IN7
+In1[0] => Equal0.IN6
+In1[1] => LessThan0.IN6
+In1[1] => LessThan1.IN6
+In1[1] => Equal0.IN5
+In1[2] => LessThan0.IN5
+In1[2] => LessThan1.IN5
+In1[2] => Equal0.IN4
+In1[3] => LessThan0.IN4
+In1[3] => LessThan1.IN4
+In1[3] => Equal0.IN3
+In1[4] => LessThan0.IN3
+In1[4] => LessThan1.IN3
+In1[4] => Equal0.IN2
+In1[5] => LessThan0.IN2
+In1[5] => LessThan1.IN2
+In1[5] => Equal0.IN1
+In1[6] => LessThan0.IN1
+In1[6] => LessThan1.IN1
+In1[6] => Equal0.IN0
+In2[0] => LessThan0.IN14
+In2[0] => LessThan1.IN14
+In2[0] => Equal0.IN13
+In2[1] => LessThan0.IN13
+In2[1] => LessThan1.IN13
+In2[1] => Equal0.IN12
+In2[2] => LessThan0.IN12
+In2[2] => LessThan1.IN12
+In2[2] => Equal0.IN11
+In2[3] => LessThan0.IN11
+In2[3] => LessThan1.IN11
+In2[3] => Equal0.IN10
+In2[4] => LessThan0.IN10
+In2[4] => LessThan1.IN10
+In2[4] => Equal0.IN9
+In2[5] => LessThan0.IN9
+In2[5] => LessThan1.IN9
+In2[5] => Equal0.IN8
+In2[6] => LessThan0.IN8
+In2[6] => LessThan1.IN8
+In2[6] => Equal0.IN7
+Gt <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+Lt <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+Eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|letterGeneratorBDF|LPM_CONSTANT:CONST99
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <GND>
+result[5] <= <VCC>
+result[6] <= <VCC>
+
+
+|letterGeneratorBDF|letterGate:inst20
+inA => Decoder0.IN0
+inB => Decoder0.IN1
+inC => Decoder0.IN2
+inD => Decoder0.IN3
+inF => Decoder0.IN4
+out[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= <VCC>
 
 

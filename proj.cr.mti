@@ -1,1 +1,39 @@
+X:/cpre281/finalproject/cpre281_final_project/mux2_1b.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/mux2_1b.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module mux2_1b
 
+Top level modules:
+	mux2_1b
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/comparator7b.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/comparator7b.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module comparator7b
+
+Top level modules:
+	comparator7b
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/letterGate.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/letterGate.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module letterGate
+
+Top level modules:
+	letterGate
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module letterGeneratorBDF
+-- Compiling module lpm_constant_0
+-- Compiling module lpm_constant_1
+-- Compiling module lpm_constant_2
+-- Compiling module lpm_constant_3
+-- Compiling module lpm_constant_4
+-- Compiling module lpm_constant_5
+-- Compiling module lpm_constant_6
+-- Compiling module lpm_constant_7
+-- Compiling module lpm_constant_8
+-- Compiling module lpm_constant_9
+
+Top level modules:
+	letterGeneratorBDF
+
+} {} {}}
