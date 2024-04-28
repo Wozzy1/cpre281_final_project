@@ -39,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 1192 600 1368 616)
+	(rect 1264 440 1440 456)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "LetterOut[3..0]" (rect 90 0 161 12)(font "Arial" ))
 	(pt 0 8)
@@ -55,9 +55,9 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 896 1136 1072 1152)
+	(rect 1096 600 1272 616)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "F" (rect 90 0 97 12)(font "Arial" ))
+	(text "pin_name1" (rect 90 0 143 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -71,9 +71,9 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 848 1072 1024 1088)
+	(rect 1096 616 1272 632)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "D" (rect 90 0 97 17)(font "Intel Clear" ))
+	(text "pin_name2" (rect 90 0 143 17)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -87,9 +87,9 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 808 904 984 920)
+	(rect 1096 632 1272 648)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "C" (rect 90 0 97 17)(font "Intel Clear" ))
+	(text "pin_name3" (rect 90 0 143 17)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -103,9 +103,9 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 840 720 1016 736)
+	(rect 1096 648 1272 664)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "B" (rect 90 0 97 17)(font "Intel Clear" ))
+	(text "pin_name4" (rect 90 0 143 17)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -119,9 +119,9 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 800 536 976 552)
+	(rect 1096 664 1272 680)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "A" (rect 90 0 98 12)(font "Arial" ))
+	(text "pin_name5" (rect 90 0 143 17)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -135,9 +135,25 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 280 1624 456 1640)
+	(rect 1096 680 1272 696)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "test[6..0]" (rect 90 0 134 12)(font "Arial" ))
+	(text "pin_name6" (rect 90 0 143 17)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1096 696 1272 712)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "pin_name7" (rect 90 0 143 17)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -1380,7 +1396,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 936 576 1080 720)
+	(rect 1008 416 1152 560)
 	(text "letterGate" (rect 5 0 53 12)(font "Arial" ))
 	(text "inst20" (rect 8 128 36 145)(font "Intel Clear" ))
 	(port
@@ -1427,6 +1443,98 @@ https://fpgasoftware.intel.com/eula.
 	)
 	(drawing
 		(rectangle (rect 16 16 128 128))
+	)
+)
+(symbol
+	(rect 976 576 1096 752)
+	(text "seven_seg_decoder_5b" (rect 5 0 121 12)(font "Arial" ))
+	(text "inst16" (rect 8 160 36 177)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "x4" (rect 0 0 11 12)(font "Arial" ))
+		(text "x4" (rect 21 27 32 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "x3" (rect 0 0 11 12)(font "Arial" ))
+		(text "x3" (rect 21 43 32 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "x2" (rect 0 0 11 12)(font "Arial" ))
+		(text "x2" (rect 21 59 32 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "x1" (rect 0 0 11 12)(font "Arial" ))
+		(text "x1" (rect 21 75 32 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "x0" (rect 0 0 11 12)(font "Arial" ))
+		(text "x0" (rect 21 91 32 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "A" (rect 0 0 8 12)(font "Arial" ))
+		(text "A" (rect 93 27 101 39)(font "Arial" ))
+		(line (pt 120 32)(pt 104 32))
+	)
+	(port
+		(pt 120 48)
+		(output)
+		(text "B" (rect 0 0 7 12)(font "Arial" ))
+		(text "B" (rect 94 43 101 55)(font "Arial" ))
+		(line (pt 120 48)(pt 104 48))
+	)
+	(port
+		(pt 120 64)
+		(output)
+		(text "C" (rect 0 0 8 12)(font "Arial" ))
+		(text "C" (rect 93 59 101 71)(font "Arial" ))
+		(line (pt 120 64)(pt 104 64))
+	)
+	(port
+		(pt 120 80)
+		(output)
+		(text "D" (rect 0 0 8 12)(font "Arial" ))
+		(text "D" (rect 93 75 101 87)(font "Arial" ))
+		(line (pt 120 80)(pt 104 80))
+	)
+	(port
+		(pt 120 96)
+		(output)
+		(text "E" (rect 0 0 7 12)(font "Arial" ))
+		(text "E" (rect 94 91 101 103)(font "Arial" ))
+		(line (pt 120 96)(pt 104 96))
+	)
+	(port
+		(pt 120 112)
+		(output)
+		(text "F" (rect 0 0 7 12)(font "Arial" ))
+		(text "F" (rect 94 107 101 119)(font "Arial" ))
+		(line (pt 120 112)(pt 104 112))
+	)
+	(port
+		(pt 120 128)
+		(output)
+		(text "G" (rect 0 0 8 12)(font "Arial" ))
+		(text "G" (rect 93 123 101 135)(font "Arial" ))
+		(line (pt 120 128)(pt 104 128))
+	)
+	(drawing
+		(rectangle (rect 16 16 104 160))
 	)
 )
 (connector
@@ -1720,16 +1828,8 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(pt 800 608)
-	(pt 936 608)
-)
-(connector
 	(pt 760 320)
 	(pt 800 320)
-)
-(connector
-	(pt 936 640)
-	(pt 792 640)
 )
 (connector
 	(pt 760 928)
@@ -1742,14 +1842,6 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 760 1536)
 	(pt 896 1536)
-)
-(connector
-	(pt 936 672)
-	(pt 896 672)
-)
-(connector
-	(pt 848 656)
-	(pt 936 656)
 )
 (connector
 	(pt 560 264)
@@ -1812,72 +1904,70 @@ https://fpgasoftware.intel.com/eula.
 	(pt 600 1464)
 )
 (connector
-	(pt 1080 608)
-	(pt 1192 608)
-	(bus)
-)
-(connector
-	(pt 896 672)
-	(pt 896 1144)
-)
-(connector
-	(pt 896 1144)
-	(pt 896 1536)
-)
-(connector
 	(pt 848 656)
 	(pt 848 1232)
 )
 (connector
-	(pt 808 912)
-	(pt 792 912)
-)
-(connector
-	(pt 792 640)
-	(pt 792 912)
-)
-(connector
-	(pt 792 912)
-	(pt 792 928)
-)
-(connector
-	(pt 840 728)
-	(pt 816 728)
-)
-(connector
-	(pt 816 728)
-	(pt 816 624)
-)
-(connector
-	(pt 760 624)
-	(pt 816 624)
-)
-(connector
-	(pt 816 624)
-	(pt 936 624)
+	(pt 256 1616)
+	(pt 416 1616)
+	(bus)
 )
 (connector
 	(pt 800 320)
-	(pt 800 544)
-)
-(connector
-	(pt 800 544)
 	(pt 800 608)
 )
 (connector
-	(pt 280 1616)
-	(pt 280 1632)
+	(pt 1152 448)
+	(pt 1264 448)
 	(bus)
 )
 (connector
-	(pt 256 1616)
-	(pt 280 1616)
-	(bus)
+	(pt 1000 448)
+	(pt 1008 448)
 )
 (connector
-	(pt 280 1616)
-	(pt 416 1616)
-	(bus)
+	(pt 1000 480)
+	(pt 1008 480)
+)
+(connector
+	(pt 1000 512)
+	(pt 1008 512)
+)
+(connector
+	(pt 1000 496)
+	(pt 1008 496)
+)
+(connector
+	(pt 1000 464)
+	(pt 1008 464)
+)
+(connector
+	(pt 800 608)
+	(pt 976 608)
+)
+(connector
+	(pt 760 624)
+	(pt 976 624)
+)
+(connector
+	(pt 792 640)
+	(pt 976 640)
+)
+(connector
+	(pt 848 656)
+	(pt 976 656)
+)
+(connector
+	(pt 976 672)
+	(pt 896 672)
+)
+(connector
+	(pt 896 672)
+	(pt 896 1536)
+)
+(connector
+	(pt 792 640)
+	(pt 792 928)
 )
 (junction (pt 384 232))
 (junction (pt 384 384))
@@ -1888,8 +1978,3 @@ https://fpgasoftware.intel.com/eula.
 (junction (pt 384 688))
 (junction (pt 384 1448))
 (junction (pt 384 1296))
-(junction (pt 896 1144))
-(junction (pt 792 912))
-(junction (pt 816 624))
-(junction (pt 800 544))
-(junction (pt 280 1616))

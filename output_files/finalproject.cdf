@@ -3,6 +3,8 @@ JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
+	P ActionCode(Cfg)
+		Device PartName(EP4CE115F29) Path("X:/cpre281/finalproject/cpre281_final_project/output_files/") File("finalproject.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

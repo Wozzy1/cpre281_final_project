@@ -1,0 +1,15 @@
+X:/cpre281/finalproject/cpre281_final_project/test.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/test.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module test
+
+Top level modules:
+	test
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/reg7.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/reg7.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module reg7
+
+Top level modules:
+	reg7
+
+} {} {}}

@@ -1,335 +1,50 @@
-# Compile of LetterGenerator.v failed with 1 errors.
-# Compile of LetterGenerator.v failed with 1 errors.
-# Compile of LetterGenerator.v failed with 5 errors.
-# Compile of LetterGenerator.v failed with 5 errors.
-# Compile of LetterGenerator.v failed with 5 errors.
-# Compile of LetterGenerator.v failed with 5 errors.
-# Compile of letterGeneratorV.v was successful.
-vsim -gui work.letterGenerator
-# vsim -gui work.letterGenerator 
-# Start time: 21:19:13 on Apr 26,2024
+# Compile of test.v was successful.
+vsim -gui work.test
+# vsim -gui work.test 
+# Start time: 14:48:51 on Apr 27,2024
 # ** Note: (vsim-3812) Design is being optimized...
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorV.v(79): Module 'comparator7b' is not defined.
-#  For instance 'b2v_comp1' at path 'letterGenerator'
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorV.v(87): Module 'comparator7b' is not defined.
-#  For instance 'b2v_comp11' at path 'letterGenerator'
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorV.v(95): Module 'comparator7b' is not defined.
-#  For instance 'b2v_comp12' at path 'letterGenerator'
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorV.v(103): Module 'comparator7b' is not defined.
-#  For instance 'b2v_comp2' at path 'letterGenerator'
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorV.v(111): Module 'comparator7b' is not defined.
-#  For instance 'b2v_comp3' at path 'letterGenerator'
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorV.v(119): Module 'comparator7b' is not defined.
-#  For instance 'b2v_comp4' at path 'letterGenerator'
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorV.v(127): Module 'comparator7b' is not defined.
-#  For instance 'b2v_comp5' at path 'letterGenerator'
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorV.v(135): Module 'comparator7b' is not defined.
-#  For instance 'b2v_comp6' at path 'letterGenerator'
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorV.v(143): Module 'comparator7b' is not defined.
-#  For instance 'b2v_comp7' at path 'letterGenerator'
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorV.v(151): Module 'comparator7b' is not defined.
-#  For instance 'b2v_comp8' at path 'letterGenerator'
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorV.v(213): Module 'letterGate' is not defined.
-#  For instance 'b2v_inst19' at path 'letterGenerator'
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=11, Warnings=0.
-# Error loading design
-# End time: 21:19:16 on Apr 26,2024, Elapsed time: 0:00:03
-# Errors: 11, Warnings: 14
-# Compile of letterGeneratorV.v was successful.
-# Compile of comparator7b.v was successful.
-# Compile of letterGate.v was successful.
-# Compile of mux2_1b.v was successful.
-# 4 compiles, 0 failed with no errors.
-vsim -gui work.letterGenerator
-# vsim -gui work.letterGenerator 
-# Start time: 21:20:31 on Apr 26,2024
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Error (suppressible): X:/cpre281/finalproject/cpre281_final_project/letterGeneratorV.v(213): (vopt-2912) Port 'Output' not found in module 'letterGate' (6th connection).
+# ** Error: X:/cpre281/finalproject/cpre281_final_project/test.v(40): Module 'reg7' is not defined.
+#  For instance 'b2v_inst' at path 'test'
 # Optimization failed
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
 # Error loading design
-# End time: 21:20:33 on Apr 26,2024, Elapsed time: 0:00:02
-# Errors: 1, Warnings: 4
-# Compile of letterGate.v was successful.
-# Compile of letterGenerator.v was successful.
-# Compile of mux2_1b.v was successful.
-# 3 compiles, 0 failed with no errors.
-vsim -gui work.letterGenerator
-# vsim -gui work.letterGenerator 
-# Start time: 21:23:47 on Apr 26,2024
+# End time: 14:48:51 on Apr 27,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 5
+# Compile of test.v was successful.
+# Compile of reg7.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.test
+# vsim -gui work.test 
+# Start time: 14:49:23 on Apr 27,2024
 # ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v(79): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp1'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'Eq'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v(87): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp11'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'Eq'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v(95): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp12'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v(95): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v(103): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp2'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v(103): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v(111): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp3'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v(111): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v(119): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp4'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v(119): (vopt-2718) [TFMPC] - Missing connection for port 'Eq'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v(127): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp5'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v(127): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v(135): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp6'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v(135): (vopt-2718) [TFMPC] - Missing connection for port 'Eq'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v(143): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp7'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v(143): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v(151): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp8'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v(151): (vopt-2718) [TFMPC] - Missing connection for port 'Eq'.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=20.
-# Loading work.letterGenerator(fast)
+# Loading work.test(fast)
 add wave -position insertpoint  \
-sim:/letterGenerator/PercentageInput \
-sim:/letterGenerator/LetterOut
-force -freeze sim:/letterGenerator/PercentageInput 7'h5f 0
+sim:/test/Clock \
+sim:/test/Clear \
+sim:/test/Load \
+sim:/test/DataIn \
+sim:/test/TestOutput
+force -freeze sim:/test/DataIn 7'h5f 0
+force -freeze sim:/test/Load 1'h1 0
+force -freeze sim:/test/Clock 1'h1 0
 run 100
-# Compile of letterGate.v was successful.
-# Compile of letterGenerator.v was successful.
-# Compile of mux2_1b.v was successful.
-# Compile of lpm_constant_0.v was successful.
-# Compile of lpm_constant_1.v was successful.
-# Compile of lpm_constant_2.v was successful.
-# Compile of lpm_constant_3.v was successful.
-# Compile of lpm_constant_4.v was successful.
-# Compile of lpm_constant_5.v was successful.
-# Compile of lpm_constant_6.v was successful.
-# Compile of lpm_constant_7.v was successful.
-# Compile of lpm_constant_8.v was successful.
-# Compile of lpm_constant_9.v was successful.
-# 13 compiles, 0 failed with no errors.
-quit -sim
-# End time: 21:26:15 on Apr 26,2024, Elapsed time: 0:02:28
-# Errors: 0, Warnings: 27
-vsim -gui work.letterGenerator
-# vsim -gui work.letterGenerator 
-# Start time: 21:26:29 on Apr 26,2024
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/lpm_constant_0.v(24): Module 'lpm_constant' is not defined.
-#  For instance 'lpm_instance' at path 'letterGenerator.b2v_CONST0'
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/lpm_constant_1.v(24): Module 'lpm_constant' is not defined.
-#  For instance 'lpm_instance' at path 'letterGenerator.b2v_CONST59'
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/lpm_constant_2.v(24): Module 'lpm_constant' is not defined.
-#  For instance 'lpm_instance' at path 'letterGenerator.b2v_CONST60'
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/lpm_constant_3.v(24): Module 'lpm_constant' is not defined.
-#  For instance 'lpm_instance' at path 'letterGenerator.b2v_CONST69'
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/lpm_constant_4.v(24): Module 'lpm_constant' is not defined.
-#  For instance 'lpm_instance' at path 'letterGenerator.b2v_CONST70'
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/lpm_constant_5.v(24): Module 'lpm_constant' is not defined.
-#  For instance 'lpm_instance' at path 'letterGenerator.b2v_CONST79'
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/lpm_constant_6.v(24): Module 'lpm_constant' is not defined.
-#  For instance 'lpm_instance' at path 'letterGenerator.b2v_CONST80'
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/lpm_constant_7.v(24): Module 'lpm_constant' is not defined.
-#  For instance 'lpm_instance' at path 'letterGenerator.b2v_CONST89'
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/lpm_constant_8.v(24): Module 'lpm_constant' is not defined.
-#  For instance 'lpm_instance' at path 'letterGenerator.b2v_CONST90'
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/lpm_constant_9.v(24): Module 'lpm_constant' is not defined.
-#  For instance 'lpm_instance' at path 'letterGenerator.b2v_CONST99'
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=10, Warnings=0.
-# Error loading design
-# End time: 21:26:30 on Apr 26,2024, Elapsed time: 0:00:01
-# Errors: 10, Warnings: 1
-# Compile of letterGeneratorBDF.v was successful.
-vsim -gui work.letterGeneratorBDF
-# vsim -gui work.letterGeneratorBDF 
-# Start time: 21:36:37 on Apr 26,2024
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(88): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp1'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(88): (vopt-2718) [TFMPC] - Missing connection for port 'Eq'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(96): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp11'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(96): (vopt-2718) [TFMPC] - Missing connection for port 'Eq'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(104): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp12'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(104): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(112): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp2'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(112): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(120): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp3'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(120): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(128): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp4'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(128): (vopt-2718) [TFMPC] - Missing connection for port 'Eq'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(136): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp5'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(136): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(144): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp6'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(144): (vopt-2718) [TFMPC] - Missing connection for port 'Eq'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(152): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp7'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(152): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(160): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp8'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(160): (vopt-2718) [TFMPC] - Missing connection for port 'Eq'.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=20.
-# Loading work.letterGeneratorBDF(fast)
-add wave -position insertpoint  \
-sim:/letterGeneratorBDF/PercentageInput \
-sim:/letterGeneratorBDF/out0 \
-sim:/letterGeneratorBDF/out1 \
-sim:/letterGeneratorBDF/out2 \
-sim:/letterGeneratorBDF/out3 \
-sim:/letterGeneratorBDF/LetterOut
-force -freeze sim:/letterGeneratorBDF/PercentageInput 7'h5f 0
+force -freeze sim:/test/Load 1'h0 0
+force -freeze sim:/test/Clock 1'h0 0
 run 100
-# Break key hit
-quit -sim
-# End time: 21:37:43 on Apr 26,2024, Elapsed time: 0:01:06
-# Errors: 0, Warnings: 25
-# Compile of comparator7b.v was successful.
-vsim -gui work.letterGeneratorBDF
-# vsim -gui work.letterGeneratorBDF 
-# Start time: 21:38:17 on Apr 26,2024
-# ** Note: (vsim-8009) Loading existing optimized design _opt2
-# Loading work.letterGeneratorBDF(fast)
-add wave -position insertpoint  \
-sim:/letterGeneratorBDF/PercentageInput \
-sim:/letterGeneratorBDF/out0 \
-sim:/letterGeneratorBDF/out1 \
-sim:/letterGeneratorBDF/out2 \
-sim:/letterGeneratorBDF/out3 \
-sim:/letterGeneratorBDF/LetterOut
-noforce sim:/letterGeneratorBDF/PercentageInput
-force -freeze sim:/letterGeneratorBDF/PercentageInput 7'h5f 0
+force -freeze sim:/test/Clock 1'h1 0
+run 100
+force -freeze sim:/test/Clock 1'h0 0
+force -freeze sim:/test/DataIn 7'h50 0
+run 100
+force -freeze sim:/test/Load 1'h1 0
+force -freeze sim:/test/Clock 1'h1 0
+run 100
+force -freeze sim:/test/Clock 1'h0 0
+force -freeze sim:/test/Load 1'h0 0
+run 100
+force -freeze sim:/test/Clear 1'h1 0
+force -freeze sim:/test/Clock 1'h1 0
 run 100
 quit -sim
-# End time: 21:39:09 on Apr 26,2024, Elapsed time: 0:00:52
+# End time: 14:52:21 on Apr 27,2024, Elapsed time: 0:02:58
 # Errors: 0, Warnings: 3
-vsim -gui work.comparator7b
-# vsim -gui work.comparator7b 
-# Start time: 21:39:19 on Apr 26,2024
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading work.comparator7b(fast)
-add wave -position insertpoint  \
-sim:/comparator7b/In1 \
-sim:/comparator7b/In2 \
-sim:/comparator7b/Gt \
-sim:/comparator7b/Lt \
-sim:/comparator7b/Eq
-force -freeze sim:/comparator7b/In1 7'h5f 0
-force -freeze sim:/comparator7b/In2 7'h50 0
-run 100
-quit -sim
-# End time: 21:43:06 on Apr 26,2024, Elapsed time: 0:03:47
-# Errors: 0, Warnings: 1
-# Compile of letterGeneratorBDF.v was successful.
-vsim -gui work.letterGeneratorBDF
-# vsim -gui work.letterGeneratorBDF 
-# Start time: 21:43:28 on Apr 26,2024
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(88): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp1'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(88): (vopt-2718) [TFMPC] - Missing connection for port 'Lt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(96): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp11'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(96): (vopt-2718) [TFMPC] - Missing connection for port 'Lt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(104): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp12'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(104): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(112): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp2'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(112): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(120): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp3'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(120): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(128): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp4'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(128): (vopt-2718) [TFMPC] - Missing connection for port 'Lt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(136): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp5'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(136): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(144): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp6'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(144): (vopt-2718) [TFMPC] - Missing connection for port 'Lt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(152): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp7'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(152): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(160): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp8'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(160): (vopt-2718) [TFMPC] - Missing connection for port 'Lt'.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=20.
-# Loading work.letterGeneratorBDF(fast)
-add wave -position insertpoint  \
-sim:/letterGeneratorBDF/PercentageInput
-add wave -position insertpoint  \
-sim:/letterGeneratorBDF/out0
-add wave -position insertpoint  \
-sim:/letterGeneratorBDF/out1
-add wave -position insertpoint  \
-sim:/letterGeneratorBDF/out2
-add wave -position insertpoint  \
-sim:/letterGeneratorBDF/out3
-force -freeze sim:/letterGeneratorBDF/PercentageInput 7'h5f 0
-run 10
-add wave -position insertpoint  \
-sim:/letterGeneratorBDF/LetterOut
-run 100
-quit -sim
-# End time: 21:48:11 on Apr 26,2024, Elapsed time: 0:04:43
-# Errors: 0, Warnings: 22
-# Compile of letterGeneratorBDF.v was successful.
-vsim -gui work.letterGeneratorBDF
-# vsim -gui work.letterGeneratorBDF 
-# Start time: 21:48:24 on Apr 26,2024
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(94): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp1'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(94): (vopt-2718) [TFMPC] - Missing connection for port 'Lt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(102): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp11'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(102): (vopt-2718) [TFMPC] - Missing connection for port 'Lt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(110): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp12'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(110): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(118): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp2'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(118): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(126): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp3'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(126): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(134): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp4'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(134): (vopt-2718) [TFMPC] - Missing connection for port 'Lt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(142): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp5'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(142): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(150): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp6'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(150): (vopt-2718) [TFMPC] - Missing connection for port 'Lt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(158): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp7'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(158): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(166): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp8'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(166): (vopt-2718) [TFMPC] - Missing connection for port 'Lt'.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=20.
-# Loading work.letterGeneratorBDF(fast)
-add wave -position insertpoint  \
-sim:/letterGeneratorBDF/PercentageInput
-add wave -position insertpoint  \
-sim:/letterGeneratorBDF/A
-add wave -position insertpoint  \
-sim:/letterGeneratorBDF/B
-add wave -position insertpoint  \
-sim:/letterGeneratorBDF/C
-add wave -position insertpoint  \
-sim:/letterGeneratorBDF/D
-add wave -position insertpoint  \
-sim:/letterGeneratorBDF/F
-add wave -position insertpoint  \
-sim:/letterGeneratorBDF/LetterOut
-force -freeze sim:/letterGeneratorBDF/PercentageInput 7'h5f 0
-run 100
-quit -sim
-# End time: 21:55:26 on Apr 26,2024, Elapsed time: 0:07:02
-# Errors: 0, Warnings: 22
-# Compile of letterGeneratorBDF.v was successful.
-vsim -gui work.letterGeneratorBDF
-# vsim -gui work.letterGeneratorBDF 
-# Start time: 21:55:55 on Apr 26,2024
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(97): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp1'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(97): (vopt-2718) [TFMPC] - Missing connection for port 'Lt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(105): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp11'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(105): (vopt-2718) [TFMPC] - Missing connection for port 'Lt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(113): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp12'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(113): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(121): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp2'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(121): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(129): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp3'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(129): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(137): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp4'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(137): (vopt-2718) [TFMPC] - Missing connection for port 'Lt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(145): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp5'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(145): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(153): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp6'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(153): (vopt-2718) [TFMPC] - Missing connection for port 'Lt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(161): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp7'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(161): (vopt-2718) [TFMPC] - Missing connection for port 'Gt'.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(169): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_comp8'.  Expected 5, found 4.
-# ** Warning: X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v(169): (vopt-2718) [TFMPC] - Missing connection for port 'Lt'.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=20.
-# Loading work.letterGeneratorBDF(fast)
-add wave -position insertpoint  \
-sim:/letterGeneratorBDF/PercentageInput \
-sim:/letterGeneratorBDF/test
-run 10
-run 100
-# End time: 22:04:43 on Apr 26,2024, Elapsed time: 0:08:48
-# Errors: 0, Warnings: 22

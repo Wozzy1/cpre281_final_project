@@ -1,5 +1,5 @@
 Analysis & Synthesis report for finalproject
-Fri Apr 26 21:54:00 2024
+Sat Apr 27 16:32:45 2024
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Standard Edition
 
 
@@ -14,19 +14,10 @@ Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Standard Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: LPM_CONSTANT:CONST0
- 10. Parameter Settings for User Entity Instance: LPM_CONSTANT:CONST59
- 11. Parameter Settings for User Entity Instance: LPM_CONSTANT:CONST60
- 12. Parameter Settings for User Entity Instance: LPM_CONSTANT:CONST69
- 13. Parameter Settings for User Entity Instance: LPM_CONSTANT:CONST70
- 14. Parameter Settings for User Entity Instance: LPM_CONSTANT:CONST79
- 15. Parameter Settings for User Entity Instance: LPM_CONSTANT:CONST80
- 16. Parameter Settings for User Entity Instance: LPM_CONSTANT:CONST89
- 17. Parameter Settings for User Entity Instance: LPM_CONSTANT:CONST90
- 18. Parameter Settings for User Entity Instance: LPM_CONSTANT:CONST99
- 19. Post-Synthesis Netlist Statistics for Top Partition
- 20. Elapsed Time Per Partition
- 21. Analysis & Synthesis Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -53,16 +44,16 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                            ;
 +------------------------------------+----------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 26 21:54:00 2024              ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 27 16:32:45 2024              ;
 ; Quartus Prime Version              ; 22.1std.1 Build 917 02/14/2023 SC Standard Edition ;
 ; Revision Name                      ; finalproject                                       ;
-; Top-level Entity Name              ; letterGeneratorBDF                                 ;
+; Top-level Entity Name              ; memoryUnit                                         ;
 ; Family                             ; Cyclone IV E                                       ;
-; Total logic elements               ; 10                                                 ;
-;     Total combinational functions  ; 10                                                 ;
-;     Dedicated logic registers      ; 0                                                  ;
-; Total registers                    ; 0                                                  ;
-; Total pins                         ; 23                                                 ;
+; Total logic elements               ; 62                                                 ;
+;     Total combinational functions  ; 62                                                 ;
+;     Dedicated logic registers      ; 28                                                 ;
+; Total registers                    ; 28                                                 ;
+; Total pins                         ; 55                                                 ;
 ; Total virtual pins                 ; 0                                                  ;
 ; Total memory bits                  ; 0                                                  ;
 ; Embedded Multiplier 9-bit elements ; 0                                                  ;
@@ -76,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                            ; letterGeneratorBDF ; finalproject       ;
+; Top-level entity name                                            ; memoryUnit         ; finalproject       ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -161,8 +152,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 2           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 20          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -172,58 +163,64 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                          ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
-; letterGeneratorBDF.bdf           ; yes             ; User Block Diagram/Schematic File  ; X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.bdf  ;         ;
-; letterGate.v                     ; yes             ; User Verilog HDL File              ; X:/cpre281/finalproject/cpre281_final_project/letterGate.v            ;         ;
-; comparator7b.v                   ; yes             ; User Verilog HDL File              ; X:/cpre281/finalproject/cpre281_final_project/comparator7b.v          ;         ;
-; lpm_constant.tdf                 ; yes             ; Megafunction                       ; c:/intelfpga/22.1std/quartus/libraries/megafunctions/lpm_constant.tdf ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                        ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------+---------+
+; seven_seg_decoder7b.v            ; yes             ; User Verilog HDL File              ; X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v ;         ;
+; reg7.v                           ; yes             ; User Verilog HDL File              ; X:/cpre281/finalproject/cpre281_final_project/reg7.v                ;         ;
+; memoryUnit.bdf                   ; yes             ; User Block Diagram/Schematic File  ; X:/cpre281/finalproject/cpre281_final_project/memoryUnit.bdf        ;         ;
+; mux4_to_1_7b.v                   ; yes             ; User Verilog HDL File              ; X:/cpre281/finalproject/cpre281_final_project/mux4_to_1_7b.v        ;         ;
+; decoder_2_to_4.v                 ; yes             ; User Verilog HDL File              ; X:/cpre281/finalproject/cpre281_final_project/decoder_2_to_4.v      ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                            ;
-+---------------------------------------------+--------------------------+
-; Resource                                    ; Usage                    ;
-+---------------------------------------------+--------------------------+
-; Estimated Total logic elements              ; 10                       ;
-;                                             ;                          ;
-; Total combinational functions               ; 10                       ;
-; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 7                        ;
-;     -- 3 input functions                    ; 2                        ;
-;     -- <=2 input functions                  ; 1                        ;
-;                                             ;                          ;
-; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 10                       ;
-;     -- arithmetic mode                      ; 0                        ;
-;                                             ;                          ;
-; Total registers                             ; 0                        ;
-;     -- Dedicated logic registers            ; 0                        ;
-;     -- I/O registers                        ; 0                        ;
-;                                             ;                          ;
-; I/O pins                                    ; 23                       ;
-;                                             ;                          ;
-; Embedded Multiplier 9-bit elements          ; 0                        ;
-;                                             ;                          ;
-; Maximum fan-out node                        ; PercentageInput[4]~input ;
-; Maximum fan-out                             ; 6                        ;
-; Total fan-out                               ; 66                       ;
-; Average fan-out                             ; 1.18                     ;
-+---------------------------------------------+--------------------------+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+; Estimated Total logic elements              ; 62              ;
+;                                             ;                 ;
+; Total combinational functions               ; 62              ;
+; Logic element usage by number of LUT inputs ;                 ;
+;     -- 4 input functions                    ; 57              ;
+;     -- 3 input functions                    ; 3               ;
+;     -- <=2 input functions                  ; 2               ;
+;                                             ;                 ;
+; Logic elements by mode                      ;                 ;
+;     -- normal mode                          ; 62              ;
+;     -- arithmetic mode                      ; 0               ;
+;                                             ;                 ;
+; Total registers                             ; 28              ;
+;     -- Dedicated logic registers            ; 28              ;
+;     -- I/O registers                        ; 0               ;
+;                                             ;                 ;
+; I/O pins                                    ; 55              ;
+;                                             ;                 ;
+; Embedded Multiplier 9-bit elements          ; 0               ;
+;                                             ;                 ;
+; Maximum fan-out node                        ; SELECT[1]~input ;
+; Maximum fan-out                             ; 43              ;
+; Total fan-out                               ; 421             ;
+; Average fan-out                             ; 2.10            ;
++---------------------------------------------+-----------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                               ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Entity Name        ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------------+--------------+
-; |letterGeneratorBDF        ; 10 (8)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 23   ; 0            ; |letterGeneratorBDF                   ; letterGeneratorBDF ; work         ;
-;    |letterGate:inst20|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |letterGeneratorBDF|letterGate:inst20 ; letterGate         ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                     ;
++----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                           ; Entity Name          ; Library Name ;
++----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+----------------------+--------------+
+; |memoryUnit                            ; 62 (1)              ; 28 (0)                    ; 0           ; 0            ; 0       ; 0         ; 55   ; 0            ; |memoryUnit                                   ; memoryUnit           ; work         ;
+;    |mux4_to_1_7b:inst4|                ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memoryUnit|mux4_to_1_7b:inst4                ; mux4_to_1_7b         ; work         ;
+;    |reg7:REGISTER0|                    ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memoryUnit|reg7:REGISTER0                    ; reg7                 ; work         ;
+;    |reg7:REGISTER1|                    ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memoryUnit|reg7:REGISTER1                    ; reg7                 ; work         ;
+;    |reg7:REGISTER2|                    ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memoryUnit|reg7:REGISTER2                    ; reg7                 ; work         ;
+;    |reg7:REGISTER3|                    ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memoryUnit|reg7:REGISTER3                    ; reg7                 ; work         ;
+;    |seven_seg_decoder_7b:instantDEATH| ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memoryUnit|seven_seg_decoder_7b:instantDEATH ; seven_seg_decoder_7b ; work         ;
++----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -232,144 +229,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 28    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 28    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_CONSTANT:CONST0 ;
-+--------------------+------------------+--------------------------+
-; Parameter Name     ; Value            ; Type                     ;
-+--------------------+------------------+--------------------------+
-; LPM_WIDTH          ; 7                ; Untyped                  ;
-; LPM_CVALUE         ; 0000000          ; Unsigned Binary          ;
-; ENABLE_RUNTIME_MOD ; NO               ; Untyped                  ;
-; CBXI_PARAMETER     ; lpm_constant_i84 ; Untyped                  ;
-+--------------------+------------------+--------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_CONSTANT:CONST59 ;
-+--------------------+------------------+---------------------------+
-; Parameter Name     ; Value            ; Type                      ;
-+--------------------+------------------+---------------------------+
-; LPM_WIDTH          ; 7                ; Untyped                   ;
-; LPM_CVALUE         ; 0111011          ; Unsigned Binary           ;
-; ENABLE_RUNTIME_MOD ; NO               ; Untyped                   ;
-; CBXI_PARAMETER     ; lpm_constant_7a4 ; Untyped                   ;
-+--------------------+------------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_CONSTANT:CONST60 ;
-+--------------------+------------------+---------------------------+
-; Parameter Name     ; Value            ; Type                      ;
-+--------------------+------------------+---------------------------+
-; LPM_WIDTH          ; 7                ; Untyped                   ;
-; LPM_CVALUE         ; 0111100          ; Unsigned Binary           ;
-; ENABLE_RUNTIME_MOD ; NO               ; Untyped                   ;
-; CBXI_PARAMETER     ; lpm_constant_9a4 ; Untyped                   ;
-+--------------------+------------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_CONSTANT:CONST69 ;
-+--------------------+------------------+---------------------------+
-; Parameter Name     ; Value            ; Type                      ;
-+--------------------+------------------+---------------------------+
-; LPM_WIDTH          ; 7                ; Untyped                   ;
-; LPM_CVALUE         ; 1000101          ; Unsigned Binary           ;
-; ENABLE_RUNTIME_MOD ; NO               ; Untyped                   ;
-; CBXI_PARAMETER     ; lpm_constant_t84 ; Untyped                   ;
-+--------------------+------------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_CONSTANT:CONST70 ;
-+--------------------+------------------+---------------------------+
-; Parameter Name     ; Value            ; Type                      ;
-+--------------------+------------------+---------------------------+
-; LPM_WIDTH          ; 7                ; Untyped                   ;
-; LPM_CVALUE         ; 1000110          ; Unsigned Binary           ;
-; ENABLE_RUNTIME_MOD ; NO               ; Untyped                   ;
-; CBXI_PARAMETER     ; lpm_constant_s84 ; Untyped                   ;
-+--------------------+------------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_CONSTANT:CONST79 ;
-+--------------------+------------------+---------------------------+
-; Parameter Name     ; Value            ; Type                      ;
-+--------------------+------------------+---------------------------+
-; LPM_WIDTH          ; 7                ; Untyped                   ;
-; LPM_CVALUE         ; 1001111          ; Unsigned Binary           ;
-; ENABLE_RUNTIME_MOD ; NO               ; Untyped                   ;
-; CBXI_PARAMETER     ; lpm_constant_ca4 ; Untyped                   ;
-+--------------------+------------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_CONSTANT:CONST80 ;
-+--------------------+------------------+---------------------------+
-; Parameter Name     ; Value            ; Type                      ;
-+--------------------+------------------+---------------------------+
-; LPM_WIDTH          ; 7                ; Untyped                   ;
-; LPM_CVALUE         ; 1011010          ; Unsigned Binary           ;
-; ENABLE_RUNTIME_MOD ; NO               ; Untyped                   ;
-; CBXI_PARAMETER     ; lpm_constant_8a4 ; Untyped                   ;
-+--------------------+------------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_CONSTANT:CONST89 ;
-+--------------------+------------------+---------------------------+
-; Parameter Name     ; Value            ; Type                      ;
-+--------------------+------------------+---------------------------+
-; LPM_WIDTH          ; 7                ; Untyped                   ;
-; LPM_CVALUE         ; 1011001          ; Unsigned Binary           ;
-; ENABLE_RUNTIME_MOD ; NO               ; Untyped                   ;
-; CBXI_PARAMETER     ; lpm_constant_094 ; Untyped                   ;
-+--------------------+------------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_CONSTANT:CONST90 ;
-+--------------------+------------------+---------------------------+
-; Parameter Name     ; Value            ; Type                      ;
-+--------------------+------------------+---------------------------+
-; LPM_WIDTH          ; 7                ; Untyped                   ;
-; LPM_CVALUE         ; 1011010          ; Unsigned Binary           ;
-; ENABLE_RUNTIME_MOD ; NO               ; Untyped                   ;
-; CBXI_PARAMETER     ; lpm_constant_8a4 ; Untyped                   ;
-+--------------------+------------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_CONSTANT:CONST99 ;
-+--------------------+------------------+---------------------------+
-; Parameter Name     ; Value            ; Type                      ;
-+--------------------+------------------+---------------------------+
-; LPM_WIDTH          ; 7                ; Untyped                   ;
-; LPM_CVALUE         ; 1100011          ; Unsigned Binary           ;
-; ENABLE_RUNTIME_MOD ; NO               ; Untyped                   ;
-; CBXI_PARAMETER     ; lpm_constant_r84 ; Untyped                   ;
-+--------------------+------------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |memoryUnit|reg7:REGISTER0|Dout[6]              ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |memoryUnit|reg7:REGISTER1|Dout[0]              ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |memoryUnit|reg7:REGISTER2|Dout[1]              ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |memoryUnit|reg7:REGISTER3|Dout[1]              ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |memoryUnit|mux4_to_1_7b:inst4|out[0]           ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |memoryUnit|seven_seg_decoder_7b:instantDEATH|A ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -377,17 +258,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 23                          ;
-; cycloneiii_lcell_comb ; 15                          ;
-;     normal            ; 15                          ;
-;         0 data inputs ; 2                           ;
+; boundary_port         ; 55                          ;
+; cycloneiii_ff         ; 28                          ;
+;     ENA               ; 28                          ;
+; cycloneiii_lcell_comb ; 66                          ;
+;     normal            ; 66                          ;
+;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 3                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 7                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 57                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.95                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.62                        ;
 +-----------------------+-----------------------------+
 
 
@@ -406,99 +289,66 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.1 Build 917 02/14/2023 SC Standard Edition
-    Info: Processing started: Fri Apr 26 21:53:47 2024
+    Info: Processing started: Sat Apr 27 16:32:39 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off finalproject -c finalproject
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file seven_seg_decoder7b.v
+    Info (12023): Found entity 1: seven_seg_decoder_7b File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux2_1b.bdf
     Info (12023): Found entity 1: mux2_1b
-Info (12021): Found 1 design units, including 1 entities, in source file lettergeneratorbdf.bdf
-    Info (12023): Found entity 1: letterGeneratorBDF
-Info (12021): Found 1 design units, including 1 entities, in source file lettergate.v
-    Info (12023): Found entity 1: letterGate File: X:/cpre281/finalproject/cpre281_final_project/letterGate.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file seven_seg_decoder.v
-    Info (12023): Found entity 1: seven_seg_decoder File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux8_4b.v
     Info (12023): Found entity 1: Mux8_4b File: X:/cpre281/finalproject/cpre281_final_project/Mux8_4b.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file magcomp.v
-    Info (12023): Found entity 1: magComp File: X:/cpre281/finalproject/cpre281_final_project/magComp.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file main.bdf
     Info (12023): Found entity 1: main
-Info (12021): Found 1 design units, including 1 entities, in source file comparator7b.v
-    Info (12023): Found entity 1: comparator7b File: X:/cpre281/finalproject/cpre281_final_project/comparator7b.v Line: 4
-Info (12127): Elaborating entity "letterGeneratorBDF" for the top level hierarchy
-Warning (275011): Block or symbol "comparator7b" of instance "comp7" overlaps another block or symbol
-Info (12128): Elaborating entity "comparator7b" for hierarchy "comparator7b:comp8"
-Info (12128): Elaborating entity "LPM_CONSTANT" for hierarchy "LPM_CONSTANT:CONST0"
-Info (12130): Elaborated megafunction instantiation "LPM_CONSTANT:CONST0"
-Info (12133): Instantiated megafunction "LPM_CONSTANT:CONST0" with the following parameter:
-    Info (12134): Parameter "LPM_CVALUE" = "0000000"
-    Info (12134): Parameter "LPM_WIDTH" = "7"
-Info (12128): Elaborating entity "LPM_CONSTANT" for hierarchy "LPM_CONSTANT:CONST59"
-Info (12130): Elaborated megafunction instantiation "LPM_CONSTANT:CONST59"
-Info (12133): Instantiated megafunction "LPM_CONSTANT:CONST59" with the following parameter:
-    Info (12134): Parameter "LPM_CVALUE" = "0111011"
-    Info (12134): Parameter "LPM_WIDTH" = "7"
-Info (12128): Elaborating entity "LPM_CONSTANT" for hierarchy "LPM_CONSTANT:CONST60"
-Info (12130): Elaborated megafunction instantiation "LPM_CONSTANT:CONST60"
-Info (12133): Instantiated megafunction "LPM_CONSTANT:CONST60" with the following parameter:
-    Info (12134): Parameter "LPM_CVALUE" = "0111100"
-    Info (12134): Parameter "LPM_WIDTH" = "7"
-Info (12128): Elaborating entity "LPM_CONSTANT" for hierarchy "LPM_CONSTANT:CONST69"
-Info (12130): Elaborated megafunction instantiation "LPM_CONSTANT:CONST69"
-Info (12133): Instantiated megafunction "LPM_CONSTANT:CONST69" with the following parameter:
-    Info (12134): Parameter "LPM_CVALUE" = "1000101"
-    Info (12134): Parameter "LPM_WIDTH" = "7"
-Info (12128): Elaborating entity "LPM_CONSTANT" for hierarchy "LPM_CONSTANT:CONST70"
-Info (12130): Elaborated megafunction instantiation "LPM_CONSTANT:CONST70"
-Info (12133): Instantiated megafunction "LPM_CONSTANT:CONST70" with the following parameter:
-    Info (12134): Parameter "LPM_CVALUE" = "1000110"
-    Info (12134): Parameter "LPM_WIDTH" = "7"
-Info (12128): Elaborating entity "LPM_CONSTANT" for hierarchy "LPM_CONSTANT:CONST79"
-Info (12130): Elaborated megafunction instantiation "LPM_CONSTANT:CONST79"
-Info (12133): Instantiated megafunction "LPM_CONSTANT:CONST79" with the following parameter:
-    Info (12134): Parameter "LPM_CVALUE" = "1001111"
-    Info (12134): Parameter "LPM_WIDTH" = "7"
-Info (12128): Elaborating entity "LPM_CONSTANT" for hierarchy "LPM_CONSTANT:CONST80"
-Info (12130): Elaborated megafunction instantiation "LPM_CONSTANT:CONST80"
-Info (12133): Instantiated megafunction "LPM_CONSTANT:CONST80" with the following parameter:
-    Info (12134): Parameter "LPM_CVALUE" = "1011010"
-    Info (12134): Parameter "LPM_WIDTH" = "7"
-Info (12128): Elaborating entity "LPM_CONSTANT" for hierarchy "LPM_CONSTANT:CONST89"
-Info (12130): Elaborated megafunction instantiation "LPM_CONSTANT:CONST89"
-Info (12133): Instantiated megafunction "LPM_CONSTANT:CONST89" with the following parameter:
-    Info (12134): Parameter "LPM_CVALUE" = "1011001"
-    Info (12134): Parameter "LPM_WIDTH" = "7"
-Info (12128): Elaborating entity "LPM_CONSTANT" for hierarchy "LPM_CONSTANT:CONST99"
-Info (12130): Elaborated megafunction instantiation "LPM_CONSTANT:CONST99"
-Info (12133): Instantiated megafunction "LPM_CONSTANT:CONST99" with the following parameter:
-    Info (12134): Parameter "LPM_CVALUE" = "1100011"
-    Info (12134): Parameter "LPM_WIDTH" = "7"
-Info (12128): Elaborating entity "letterGate" for hierarchy "letterGate:inst20"
-Info (10264): Verilog HDL Case Statement information at letterGate.v(6): all case item expressions in this case statement are onehot File: X:/cpre281/finalproject/cpre281_final_project/letterGate.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file reg7.v
+    Info (12023): Found entity 1: reg7 File: X:/cpre281/finalproject/cpre281_final_project/reg7.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file memoryunit.bdf
+    Info (12023): Found entity 1: memoryUnit
+Info (12021): Found 1 design units, including 1 entities, in source file mux4_to_1_7b.v
+    Info (12023): Found entity 1: mux4_to_1_7b File: X:/cpre281/finalproject/cpre281_final_project/mux4_to_1_7b.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file decoder_2_to_4.v
+    Info (12023): Found entity 1: decoder2_to_4 File: X:/cpre281/finalproject/cpre281_final_project/decoder_2_to_4.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file mux2_to_1_7b.v
+    Info (12023): Found entity 1: mux2_to_1_7b File: X:/cpre281/finalproject/cpre281_final_project/mux2_to_1_7b.v Line: 1
+Info (12127): Elaborating entity "memoryUnit" for the top level hierarchy
+Info (12128): Elaborating entity "seven_seg_decoder_7b" for hierarchy "seven_seg_decoder_7b:instantDEATH"
+Warning (10240): Verilog HDL Always Construct warning at seven_seg_decoder7b.v(13): inferring latch(es) for variable "A", which holds its previous value in one or more paths through the always construct File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 13
+Warning (10240): Verilog HDL Always Construct warning at seven_seg_decoder7b.v(13): inferring latch(es) for variable "B", which holds its previous value in one or more paths through the always construct File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 13
+Warning (10240): Verilog HDL Always Construct warning at seven_seg_decoder7b.v(13): inferring latch(es) for variable "C", which holds its previous value in one or more paths through the always construct File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 13
+Warning (10240): Verilog HDL Always Construct warning at seven_seg_decoder7b.v(13): inferring latch(es) for variable "D", which holds its previous value in one or more paths through the always construct File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 13
+Warning (10240): Verilog HDL Always Construct warning at seven_seg_decoder7b.v(13): inferring latch(es) for variable "E", which holds its previous value in one or more paths through the always construct File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 13
+Warning (10240): Verilog HDL Always Construct warning at seven_seg_decoder7b.v(13): inferring latch(es) for variable "F", which holds its previous value in one or more paths through the always construct File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 13
+Warning (10240): Verilog HDL Always Construct warning at seven_seg_decoder7b.v(13): inferring latch(es) for variable "G", which holds its previous value in one or more paths through the always construct File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 13
+Info (10041): Inferred latch for "G" at seven_seg_decoder7b.v(13) File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 13
+Info (10041): Inferred latch for "F" at seven_seg_decoder7b.v(13) File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 13
+Info (10041): Inferred latch for "E" at seven_seg_decoder7b.v(13) File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 13
+Info (10041): Inferred latch for "D" at seven_seg_decoder7b.v(13) File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 13
+Info (10041): Inferred latch for "C" at seven_seg_decoder7b.v(13) File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 13
+Info (10041): Inferred latch for "B" at seven_seg_decoder7b.v(13) File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 13
+Info (10041): Inferred latch for "A" at seven_seg_decoder7b.v(13) File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 13
+Info (12128): Elaborating entity "mux4_to_1_7b" for hierarchy "mux4_to_1_7b:inst4"
+Info (12128): Elaborating entity "reg7" for hierarchy "reg7:REGISTER0"
+Info (12128): Elaborating entity "decoder2_to_4" for hierarchy "decoder2_to_4:inst8"
+Warning (14026): LATCH primitive "seven_seg_decoder_7b:instantDEATH|F" is permanently enabled File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 4
+Warning (14026): LATCH primitive "seven_seg_decoder_7b:instantDEATH|D" is permanently enabled File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 4
+Warning (14026): LATCH primitive "seven_seg_decoder_7b:instantDEATH|C" is permanently enabled File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 4
+Warning (14026): LATCH primitive "seven_seg_decoder_7b:instantDEATH|B" is permanently enabled File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 4
+Warning (14026): LATCH primitive "seven_seg_decoder_7b:instantDEATH|A" is permanently enabled File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 4
+Warning (14026): LATCH primitive "seven_seg_decoder_7b:instantDEATH|G" is permanently enabled File: X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v Line: 4
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "B" is stuck at GND
-    Warning (13410): Pin "LetterOut[3]" is stuck at VCC
-    Warning (13410): Pin "test[6]" is stuck at GND
-    Warning (13410): Pin "test[5]" is stuck at VCC
-    Warning (13410): Pin "test[4]" is stuck at VCC
-    Warning (13410): Pin "test[3]" is stuck at VCC
-    Warning (13410): Pin "test[2]" is stuck at GND
-    Warning (13410): Pin "test[1]" is stuck at VCC
-    Warning (13410): Pin "test[0]" is stuck at VCC
+    Warning (13410): Pin "pin_name5" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "PercentageInput[0]"
-Info (21057): Implemented 33 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 7 input pins
-    Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 10 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4752 megabytes
-    Info: Processing ended: Fri Apr 26 21:54:00 2024
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:20
+Info (21057): Implemented 117 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 42 output pins
+    Info (21061): Implemented 62 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4796 megabytes
+    Info: Processing ended: Sat Apr 27 16:32:45 2024
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:04
 
 

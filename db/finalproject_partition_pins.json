@@ -4,55 +4,219 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "F",
+					"name" : "pin_name1",
 					"strict" : false
 				},
 				{
-					"name" : "D",
+					"name" : "pin_name2",
 					"strict" : false
 				},
 				{
-					"name" : "C",
+					"name" : "pin_name3",
 					"strict" : false
 				},
 				{
-					"name" : "A",
+					"name" : "pin_name4",
 					"strict" : false
 				},
 				{
-					"name" : "LetterOut[2]",
+					"name" : "pin_name6",
 					"strict" : false
 				},
 				{
-					"name" : "LetterOut[1]",
+					"name" : "pin_name7",
 					"strict" : false
 				},
 				{
-					"name" : "LetterOut[0]",
+					"name" : "REGISTER0_OUT[6]",
 					"strict" : false
 				},
 				{
-					"name" : "PercentageInput[4]",
+					"name" : "REGISTER0_OUT[5]",
 					"strict" : false
 				},
 				{
-					"name" : "PercentageInput[2]",
+					"name" : "REGISTER0_OUT[4]",
 					"strict" : false
 				},
 				{
-					"name" : "PercentageInput[5]",
+					"name" : "REGISTER0_OUT[3]",
 					"strict" : false
 				},
 				{
-					"name" : "PercentageInput[3]",
+					"name" : "REGISTER0_OUT[2]",
 					"strict" : false
 				},
 				{
-					"name" : "PercentageInput[6]",
+					"name" : "REGISTER0_OUT[1]",
 					"strict" : false
 				},
 				{
-					"name" : "PercentageInput[1]",
+					"name" : "REGISTER0_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER1_OUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER1_OUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER1_OUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER1_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER1_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER1_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER1_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER2_OUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER2_OUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER2_OUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER2_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER2_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER2_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER2_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER3_OUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER3_OUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER3_OUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER3_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER3_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER3_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "REGISTER3_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SELECTED_REGISTER[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SELECTED_REGISTER[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SELECTED_REGISTER[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SELECTED_REGISTER[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SELECTED_REGISTER[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SELECTED_REGISTER[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SELECTED_REGISTER[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SELECT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SELECT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LOAD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ENABLE",
+					"strict" : false
+				},
+				{
+					"name" : "CLEAR",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK",
+					"strict" : false
+				},
+				{
+					"name" : "WRITE",
+					"strict" : false
+				},
+				{
+					"name" : "LOAD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LOAD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LOAD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LOAD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LOAD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LOAD[0]",
 					"strict" : false
 				}
 			]

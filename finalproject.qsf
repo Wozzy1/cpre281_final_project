@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY letterGeneratorBDF
+set_global_assignment -name TOP_LEVEL_ENTITY memoryUnit
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:52:02  APRIL 25, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.1 Standard Edition"
@@ -50,25 +50,43 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_location_assignment PIN_AB28 -to Input[0]
-set_location_assignment PIN_AC28 -to Input[1]
-set_location_assignment PIN_AC27 -to Input[2]
-set_location_assignment PIN_AD27 -to Input[3]
-set_location_assignment PIN_AB27 -to Input[4]
-set_location_assignment PIN_AC26 -to Input[5]
-set_location_assignment PIN_AD26 -to Input[6]
-set_location_assignment PIN_G19 -to Less
-set_location_assignment PIN_F19 -to Equal
-set_location_assignment PIN_E19 -to Greater
-set_global_assignment -name BDF_FILE mux2_1b.bdf
-set_global_assignment -name BDF_FILE letterGeneratorBDF.bdf
-set_global_assignment -name VERILOG_FILE letterGate.v
-set_global_assignment -name VERILOG_FILE seven_seg_decoder.v
-set_global_assignment -name VERILOG_FILE Mux8_4b.v
-set_global_assignment -name VERILOG_FILE magComp.v
-set_global_assignment -name BDF_FILE main.bdf
-set_global_assignment -name VERILOG_FILE comparator7b.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_J19 -to SELECTED_REGISTER[6]
+set_location_assignment PIN_E18 -to SELECTED_REGISTER[5]
+set_location_assignment PIN_F18 -to SELECTED_REGISTER[4]
+set_location_assignment PIN_F21 -to SELECTED_REGISTER[3]
+set_location_assignment PIN_E19 -to SELECTED_REGISTER[2]
+set_location_assignment PIN_G19 -to SELECTED_REGISTER[1]
+set_location_assignment PIN_F19 -to SELECTED_REGISTER[0]
+set_location_assignment PIN_R24 -to CLOCK
+set_location_assignment PIN_N21 -to CLEAR
+set_location_assignment PIN_M21 -to WRITE
+set_location_assignment PIN_AD26 -to LOAD[6]
+set_location_assignment PIN_AC26 -to LOAD[5]
+set_location_assignment PIN_AB27 -to LOAD[4]
+set_location_assignment PIN_AD27 -to LOAD[3]
+set_location_assignment PIN_AC27 -to LOAD[2]
+set_location_assignment PIN_AC28 -to LOAD[1]
+set_location_assignment PIN_AB28 -to LOAD[0]
+set_location_assignment PIN_AC25 -to SELECT[1]
+set_location_assignment PIN_AB26 -to SELECT[0]
+set_location_assignment PIN_M23 -to ENABLE
+set_global_assignment -name VERILOG_FILE seven_seg_decoder7b.v
+set_global_assignment -name BDF_FILE mux2_1b.bdf
+set_global_assignment -name VERILOG_FILE Mux8_4b.v
+set_global_assignment -name BDF_FILE main.bdf
+set_global_assignment -name VERILOG_FILE reg7.v
+set_global_assignment -name BDF_FILE memoryUnit.bdf
+set_global_assignment -name VERILOG_FILE mux4_to_1_7b.v
+set_global_assignment -name VERILOG_FILE decoder_2_to_4.v
+set_global_assignment -name VERILOG_FILE mux2_to_1_7b.v
+set_location_assignment PIN_G18 -to pin_name1
+set_location_assignment PIN_F22 -to pin_name2
+set_location_assignment PIN_E17 -to pin_name3
+set_location_assignment PIN_L26 -to pin_name4
+set_location_assignment PIN_L25 -to pin_name5
+set_location_assignment PIN_J22 -to pin_name6
+set_location_assignment PIN_H22 -to pin_name7
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -22,6 +22,17 @@ Storage:
 	4 to 2 decoder for writing
 
 
+Interacting with memory:
+  3 actions:
+    1) read
+	2) write / load
+	3) clear
+
+Suppose you select address 10 (reg2) to act on. Then you have press the clear button. That action will enable the clear to clear that address. 
+Likewise, selecting that address and pressing the button to write whatever is loaded will also 
+
+
+
 module comparator (
     input A1, A0, B1, B0,
     output A_greater_B, A_equal_B, A_less_B
@@ -111,3 +122,52 @@ always @ (inA, inB, inC, inD, inF)
 end
 
  endmodule
+ 
+ 
+ module seven_seg_decoder_5b(x4, x3, x2, x1, x0, A, B, C, D, E, F, G);
+	input x4, x3, x2, x1, x0;
+	output A, B, C, D, E, F, G;
+	reg A, B, C, D, E, F, G;
+	
+	always @(x4 or x3 or x2 or x1 or x0)
+	begin
+		case ({x4, x3, x2, x1, x0})
+		
+			// 4'b0000: {A, B, C, D, E, F, G} = 7'b0000001;
+			// 4'b0001: {A, B, C, D, E, F, G} = 7'b1001111;
+			// 4'b0010: {A, B, C, D, E, F, G} = 7'b0010010;
+			// 4'b0011: {A, B, C, D, E, F, G} = 7'b0000110;
+			// 4'b0100: {A, B, C, D, E, F, G} = 7'b1001100;
+			// 4'b0101: {A, B, C, D, E, F, G} = 7'b0100100;
+			// 4'b0110: {A, B, C, D, E, F, G} = 7'b0100000;
+			// 4'b0111: {A, B, C, D, E, F, G} = 7'b0001111;
+			// 4'b1000: {A, B, C, D, E, F, G} = 7'b0000000;
+			// 4'b1001: {A, B, C, D, E, F, G} = 7'b0000100;
+			5'b10000: {A, B, C, D, E, F, G} = 7'b0001000; // A
+			5'b01000: {A, B, C, D, E, F, G} = 7'b1100000; // B
+			5'b00100: {A, B, C, D, E, F, G} = 7'b0110001; // C
+			5'b00010: {A, B, C, D, E, F, G} = 7'b1000010; // D
+			5'b00001: {A, B, C, D, E, F, G} = 7'b0111000; // F
+			default : {A, B, C, D, E, F, G} = 7'b0110000; // E
+
+		endcase
+	end
+endmodule
+
+			
+			
+fix binary to decimal converter to go past 30
+create FSM that takes inputs and enables the display
+
+module reg7 (CLK, clr, ld, Din, Dout);
+  input CLK;
+  input clr; // clear register
+  input ld; // load register from Din
+  input [6:0] Din; // Data input for load
+  output [6:0] Dout;
+  reg [6:0] Dout;
+  always @(posedge CLK) begin
+    if (clr) Dout <= 0;
+    else if (ld) Dout <= Din;
+  end
+endmodule // shiftReg

@@ -1,37 +1,45 @@
 m255
 K4
 z2
-Z0 !s12c _opt2
+Z0 !s12c _opt
 Z1 !s99 nomlopt
+Z2 !s12c _opt1
+R1
+R2
+R1
+R2
+R1
+Z3 !s12c _opt2
+R1
+R3
+R1
+R3
+R1
 R0
-R1
-R0
-R1
-Z2 !s12c _opt
-R1
-R0
-R1
-R0
-R1
-Z3 !s12c _opt1
-R1
-R3
-R1
-R3
-R1
-R3
-R1
-R3
-R1
-R3
-R1
-R3
 R1
 R3
 R1
 R3
 R1
 R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R0
 R1
 !s11f vlog 2023.2 2023.04, Apr 11 2023
 13
@@ -42,10 +50,10 @@ R1
 cModel Technology
 Z4 dX:/cpre281/lab12/regfile
 T_opt
-!s110 1714185561
-V;Hn;WC[OeJHS^f6TfK0:H3
-04 12 4 work comparator7b fast 0
-=1-0050569babb2-662c6558-1c3-1038
+!s110 1714247363
+V[GRXdKJ=1<B3USO?__08h0
+04 4 4 work test fast 0
+=1-7486e228a124-662d56c3-1c8-4918
 R1
 Z5 !s12b OEM100
 Z6 !s124 OEM100
@@ -53,12 +61,11 @@ Z7 o-quiet -auto_acc_if_foreign -work work
 Z8 tCvgOpt 0
 n@_opt
 Z9 OL;O;2023.2;77
-R4
 T_opt1
-!s110 1714164528
-V9k<]^A[_ki:?dCJCjCY_c0
-04 15 4 work LetterGenerator fast 0
-=3-0050569bb4a6-662c132f-3b8-12f8
+!s110 1714241507
+VG^dCdzkXDD>dQ62S@1oia1
+04 20 4 work seven_seg_decoder_5b fast 0
+=1-7486e228a124-662d3fe2-37d-330c
 R1
 R5
 R6
@@ -79,6 +86,7 @@ R7
 R8
 n@_opt2
 R9
+R4
 vcomparator7b
 2X:/cpre281/finalproject/cpre281_final_project/comparator7b.v
 !s110 1714185481
@@ -471,6 +479,75 @@ r1
 R15
 !s107 X:/cpre281/finalproject/cpre281_final_project/mux2_1b.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|X:/cpre281/finalproject/cpre281_final_project/mux2_1b.v|
+!i113 0
+R13
+R8
+vreg7
+2X:/cpre281/finalproject/cpre281_final_project/reg7.v
+!s110 1714247356
+!i10b 1
+!s100 D3Qk__iZeYXf7=E[og2O=0
+IcI]I`VoVfC7=@eGQWPJn_2
+R10
+w1714242576
+8X:/cpre281/finalproject/cpre281_final_project/reg7.v
+FX:/cpre281/finalproject/cpre281_final_project/reg7.v
+!i122 44
+L0 1 12
+R11
+R12
+r1
+!s85 0
+31
+!s108 1714247356.000000
+!s107 X:/cpre281/finalproject/cpre281_final_project/reg7.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|X:/cpre281/finalproject/cpre281_final_project/reg7.v|
+!i113 0
+R13
+R8
+vseven_seg_decoder_5b
+2X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder5b.v
+!s110 1714241487
+!i10b 1
+!s100 XU4UJ>:<O:9QoZDngjm2^3
+IB`LGQbamBO:dY=Nd?6b[I0
+R10
+w1714241458
+8X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder5b.v
+FX:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder5b.v
+!i122 41
+L0 1 46
+R11
+R12
+r1
+!s85 0
+31
+!s108 1714241487.000000
+!s107 X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder5b.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder5b.v|
+!i113 0
+R13
+R8
+vtest
+2X:/cpre281/finalproject/cpre281_final_project/test.v
+!s110 1714247355
+!i10b 1
+!s100 >>b^48;Th<n2cc38naZS`1
+I4V8<GZInl2YTnlzoNQQ_m3
+R10
+w1714247309
+8X:/cpre281/finalproject/cpre281_final_project/test.v
+FX:/cpre281/finalproject/cpre281_final_project/test.v
+!i122 43
+L0 20 29
+R11
+R12
+r1
+!s85 0
+31
+!s108 1714247355.000000
+!s107 X:/cpre281/finalproject/cpre281_final_project/test.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|X:/cpre281/finalproject/cpre281_final_project/test.v|
 !i113 0
 R13
 R8
