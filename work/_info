@@ -1,45 +1,67 @@
 m255
 K4
 z2
-Z0 !s12c _opt
+Z0 !s12c _opt1
 Z1 !s99 nomlopt
-Z2 !s12c _opt1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+Z2 !s12c _opt2
+R1
+Z3 !s12c _opt
+R1
+R0
 R1
 R2
-R1
-R2
-R1
-Z3 !s12c _opt2
-R1
-R3
 R1
 R3
 R1
 R0
 R1
+R0
+R1
+R0
+R1
+R2
+R1
+R2
+R1
+R2
+R1
 R3
-R1
-R3
-R1
-R2
-R1
-R2
-R1
-R2
-R1
-R2
-R1
-R2
-R1
-R2
-R1
-R2
 R1
 R2
 R1
 R2
 R1
 R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R3
 R1
 !s11f vlog 2023.2 2023.04, Apr 11 2023
 13
@@ -50,10 +72,10 @@ R1
 cModel Technology
 Z4 dX:/cpre281/lab12/regfile
 T_opt
-!s110 1714247363
-V[GRXdKJ=1<B3USO?__08h0
-04 4 4 work test fast 0
-=1-7486e228a124-662d56c3-1c8-4918
+!s110 1714330368
+V9CLnzcO91BnnCiRK;>0OM2
+04 4 4 work reg7 fast 0
+=1-7486e2289b32-662e9aff-2c5-570
 R1
 Z5 !s12b OEM100
 Z6 !s124 OEM100
@@ -61,11 +83,12 @@ Z7 o-quiet -auto_acc_if_foreign -work work
 Z8 tCvgOpt 0
 n@_opt
 Z9 OL;O;2023.2;77
+R4
 T_opt1
-!s110 1714241507
-VG^dCdzkXDD>dQ62S@1oia1
-04 20 4 work seven_seg_decoder_5b fast 0
-=1-7486e228a124-662d3fe2-37d-330c
+!s110 1714332645
+V`P6m?4YJlM`;7JN]_l0hR0
+04 10 4 work memoryUnit fast 0
+=1-7486e2289b32-662ea3e5-1c1-3570
 R1
 R5
 R6
@@ -73,12 +96,11 @@ R7
 R8
 n@_opt1
 R9
-R4
 T_opt2
-!s110 1714186557
-V6B0zl7JfMFhT_F[VYBO6F1
-04 18 4 work letterGeneratorBDF fast 0
-=1-0050569babb2-662c693c-2d4-1bc8
+!s110 1714330607
+VbYRO`e<iZ@:2POLZ]M5k?1
+04 12 4 work mux4_to_1_7b fast 0
+=1-7486e2289b32-662e9bef-29f-3120
 R1
 R5
 R6
@@ -133,6 +155,29 @@ r1
 !i113 0
 R13
 R8
+vdecoder2_to_4
+2X:/cpre281/finalproject/cpre281_final_project/decoder_2_to_4.v
+Z14 !s110 1714332622
+!i10b 1
+!s100 H]7F8f3[NkKkGV`e^?jXz2
+ImN2WzAjT:nBIid[QR>3lH3
+R10
+w1714245034
+8X:/cpre281/finalproject/cpre281_final_project/decoder_2_to_4.v
+FX:/cpre281/finalproject/cpre281_final_project/decoder_2_to_4.v
+!i122 75
+L0 2 20
+R11
+R12
+r1
+!s85 0
+31
+Z15 !s108 1714332622.000000
+!s107 X:/cpre281/finalproject/cpre281_final_project/decoder_2_to_4.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|X:/cpre281/finalproject/cpre281_final_project/decoder_2_to_4.v|
+!i113 0
+R13
+R8
 vletterGate
 2X:/cpre281/finalproject/cpre281_final_project/letterGate.v
 !s110 1714184761
@@ -159,7 +204,7 @@ R8
 nletter@gate
 vletterGenerator
 2X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v
-Z14 !s110 1714184762
+Z16 !s110 1714184762
 !i10b 1
 !s100 5MhWK]A?eadlzEe2CibRi0
 I23H21^bfFM;oa:]bgBcHg0
@@ -174,7 +219,7 @@ R12
 r1
 !s85 0
 31
-Z15 !s108 1714184762.000000
+Z17 !s108 1714184762.000000
 !s107 X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v|
 !i113 0
@@ -206,15 +251,15 @@ R13
 R8
 n@letter@generator
 vletterGeneratorBDF
-Z16 2X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v
-Z17 !s110 1714186547
+Z18 2X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v
+Z19 !s110 1714186547
 !i10b 1
 !s100 BVccl]lBBfR0Bh<k^H1Hc3
 IcgAg<RXA?5QkoXTY^KLb`1
 R10
-Z18 w1714186522
-Z19 8X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v
-Z20 FX:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v
+Z20 w1714186522
+Z21 8X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v
+Z22 FX:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v
 !i122 38
 L0 20 237
 R11
@@ -222,23 +267,23 @@ R12
 r1
 !s85 0
 31
-Z21 !s108 1714186546.000000
-Z22 !s107 X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v|
-Z23 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v|
+Z23 !s108 1714186546.000000
+Z24 !s107 X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v|
+Z25 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v|
 !i113 0
 R13
 R8
 nletter@generator@b@d@f
 vlpm_constant_0
-R16
-R17
+R18
+R19
 !i10b 1
 !s100 dPG?R1V1>O;NAXjYGYFCW2
 IK@c1CONcG^WD5gMXQFMDG3
 R10
-R18
-R19
 R20
+R21
+R22
 !i122 38
 L0 258 6
 R11
@@ -246,22 +291,22 @@ R12
 r1
 !s85 0
 31
-R21
-R22
 R23
+R24
+R25
 !i113 0
 R13
 R8
 vlpm_constant_1
-R16
-R17
+R18
+R19
 !i10b 1
 !s100 0aSI9beO^IGHWJ[QD4D;02
 IMQ=VKeMNkDg@B@V0caBgf2
 R10
-R18
-R19
 R20
+R21
+R22
 !i122 38
 L0 265 6
 R11
@@ -269,22 +314,22 @@ R12
 r1
 !s85 0
 31
-R21
-R22
 R23
+R24
+R25
 !i113 0
 R13
 R8
 vlpm_constant_2
-R16
-R17
+R18
+R19
 !i10b 1
 !s100 gL1DN2R`H`e3nMoQCgffH3
 I>JJ0B^5KdadO][TVAPS<F0
 R10
-R18
-R19
 R20
+R21
+R22
 !i122 38
 L0 272 6
 R11
@@ -292,22 +337,22 @@ R12
 r1
 !s85 0
 31
-R21
-R22
 R23
+R24
+R25
 !i113 0
 R13
 R8
 vlpm_constant_3
-R16
-R17
+R18
+R19
 !i10b 1
 !s100 RCPiBFlh@bNXk3E_BkMAA3
 I_VMkzL0WYNlfeNCUO<IZB2
 R10
-R18
-R19
 R20
+R21
+R22
 !i122 38
 L0 279 6
 R11
@@ -315,22 +360,22 @@ R12
 r1
 !s85 0
 31
-R21
-R22
 R23
+R24
+R25
 !i113 0
 R13
 R8
 vlpm_constant_4
-R16
-R17
+R18
+R19
 !i10b 1
 !s100 3QDL_?L:h3cCIV_gfNNFm3
 I0KE?If@97]?;V^2?n7o7O0
 R10
-R18
-R19
 R20
+R21
+R22
 !i122 38
 L0 286 6
 R11
@@ -338,22 +383,22 @@ R12
 r1
 !s85 0
 31
-R21
-R22
 R23
+R24
+R25
 !i113 0
 R13
 R8
 vlpm_constant_5
-R16
-R17
+R18
+R19
 !i10b 1
 !s100 Z<dk1nZ=_[18`AoS:eUXK2
 I_X]_ZNAXlED9MDjN;6l7N1
 R10
-R18
-R19
 R20
+R21
+R22
 !i122 38
 L0 293 6
 R11
@@ -361,22 +406,22 @@ R12
 r1
 !s85 0
 31
-R21
-R22
 R23
+R24
+R25
 !i113 0
 R13
 R8
 vlpm_constant_6
-R16
-R17
+R18
+R19
 !i10b 1
 !s100 [8Cb=C]D:dlLIb2?DITLC2
 I05ok=<N>0[G<R5<5?hhhb1
 R10
-R18
-R19
 R20
+R21
+R22
 !i122 38
 L0 300 6
 R11
@@ -384,22 +429,22 @@ R12
 r1
 !s85 0
 31
-R21
-R22
 R23
+R24
+R25
 !i113 0
 R13
 R8
 vlpm_constant_7
-R16
-R17
+R18
+R19
 !i10b 1
 !s100 JH^_2ZB:HA;5KgCg3XUVh3
 I6VUCHSJ>3alkCWoQ?6lM`3
 R10
-R18
-R19
 R20
+R21
+R22
 !i122 38
 L0 307 6
 R11
@@ -407,22 +452,22 @@ R12
 r1
 !s85 0
 31
-R21
-R22
 R23
+R24
+R25
 !i113 0
 R13
 R8
 vlpm_constant_8
-R16
-R17
+R18
+R19
 !i10b 1
 !s100 6SW^949G95TeT=cRMSLl=3
 IJ=RHfg;^<4U718_hKjhkl3
 R10
-R18
-R19
 R20
+R21
+R22
 !i122 38
 L0 314 6
 R11
@@ -430,22 +475,22 @@ R12
 r1
 !s85 0
 31
-R21
-R22
 R23
+R24
+R25
 !i113 0
 R13
 R8
 vlpm_constant_9
-R16
-R17
+R18
+R19
 !i10b 1
 !s100 87Wc;6nALXbMi_UR4V0o`2
 Ik:QD^SzcaYYna=^Xz=TVJ0
 R10
-R18
-R19
 R20
+R21
+R22
 !i122 38
 L0 321 6
 R11
@@ -453,15 +498,39 @@ R12
 r1
 !s85 0
 31
-R21
-R22
 R23
+R24
+R25
 !i113 0
 R13
 R8
+vmemoryUnit
+2X:/cpre281/finalproject/cpre281_final_project/memoryUnit.v
+!s110 1714332637
+!i10b 1
+!s100 ga:S9>lV]G@cI7FLXmhSQ1
+I0I8IYdnS_>@VK=moE@e7N2
+R10
+w1714332633
+8X:/cpre281/finalproject/cpre281_final_project/memoryUnit.v
+FX:/cpre281/finalproject/cpre281_final_project/memoryUnit.v
+!i122 80
+L0 20 104
+R11
+R12
+r1
+!s85 0
+31
+!s108 1714332636.000000
+!s107 X:/cpre281/finalproject/cpre281_final_project/memoryUnit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|X:/cpre281/finalproject/cpre281_final_project/memoryUnit.v|
+!i113 0
+R13
+R8
+nmemory@unit
 vmux2_1b
 2X:/cpre281/finalproject/cpre281_final_project/mux2_1b.v
-R14
+R16
 !i10b 1
 !s100 eJ1eHNk6aZ9ihdWUf6k_m2
 IYd?>D?P7gHG_z?RcMjhH@1
@@ -476,15 +545,38 @@ R12
 r1
 !s85 0
 31
-R15
+R17
 !s107 X:/cpre281/finalproject/cpre281_final_project/mux2_1b.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|X:/cpre281/finalproject/cpre281_final_project/mux2_1b.v|
 !i113 0
 R13
 R8
+vmux4_to_1_7b
+2X:/cpre281/finalproject/cpre281_final_project/mux4_to_1_7b.v
+R14
+!i10b 1
+!s100 S81Qh:nB_T1CLgNP>27EL1
+I]INU7n3Nbl;j40[6_S<<o3
+R10
+w1714243204
+8X:/cpre281/finalproject/cpre281_final_project/mux4_to_1_7b.v
+FX:/cpre281/finalproject/cpre281_final_project/mux4_to_1_7b.v
+!i122 76
+L0 1 11
+R11
+R12
+r1
+!s85 0
+31
+R15
+!s107 X:/cpre281/finalproject/cpre281_final_project/mux4_to_1_7b.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|X:/cpre281/finalproject/cpre281_final_project/mux4_to_1_7b.v|
+!i113 0
+R13
+R8
 vreg7
 2X:/cpre281/finalproject/cpre281_final_project/reg7.v
-!s110 1714247356
+R14
 !i10b 1
 !s100 D3Qk__iZeYXf7=E[og2O=0
 IcI]I`VoVfC7=@eGQWPJn_2
@@ -492,14 +584,14 @@ R10
 w1714242576
 8X:/cpre281/finalproject/cpre281_final_project/reg7.v
 FX:/cpre281/finalproject/cpre281_final_project/reg7.v
-!i122 44
+!i122 77
 L0 1 12
 R11
 R12
 r1
 !s85 0
 31
-!s108 1714247356.000000
+R15
 !s107 X:/cpre281/finalproject/cpre281_final_project/reg7.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|X:/cpre281/finalproject/cpre281_final_project/reg7.v|
 !i113 0
@@ -525,6 +617,29 @@ r1
 !s108 1714241487.000000
 !s107 X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder5b.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder5b.v|
+!i113 0
+R13
+R8
+vseven_seg_decoder_7b
+2X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v
+R14
+!i10b 1
+!s100 HjlCJ4VZMHh@Q97TZ=fl;2
+ILbA`2mI63cbX;7;S=fQ2]3
+R10
+w1714253105
+8X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v
+FX:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v
+!i122 78
+L0 1 33
+R11
+R12
+r1
+!s85 0
+31
+R15
+!s107 X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v|
 !i113 0
 R13
 R8

@@ -1,50 +1,532 @@
-# Compile of test.v was successful.
-vsim -gui work.test
-# vsim -gui work.test 
-# Start time: 14:48:51 on Apr 27,2024
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Error: X:/cpre281/finalproject/cpre281_final_project/test.v(40): Module 'reg7' is not defined.
-#  For instance 'b2v_inst' at path 'test'
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
-# Error loading design
-# End time: 14:48:51 on Apr 27,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 5
-# Compile of test.v was successful.
+# Compile of decoder_2_to_4.v was successful.
+# Compile of mux4_to_1_7b.v was successful.
 # Compile of reg7.v was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.test
-# vsim -gui work.test 
-# Start time: 14:49:23 on Apr 27,2024
+# Compile of seven_seg_decoder7b.v was successful.
+# Compile of memoryUnit.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.memoryUnit
+# vsim -gui work.memoryUnit 
+# Start time: 13:30:09 on Apr 28,2024
 # ** Note: (vsim-3812) Design is being optimized...
-# Loading work.test(fast)
+# Loading work.memoryUnit(fast)
 add wave -position insertpoint  \
-sim:/test/Clock \
-sim:/test/Clear \
-sim:/test/Load \
-sim:/test/DataIn \
-sim:/test/TestOutput
-force -freeze sim:/test/DataIn 7'h5f 0
-force -freeze sim:/test/Load 1'h1 0
-force -freeze sim:/test/Clock 1'h1 0
-run 100
-force -freeze sim:/test/Load 1'h0 0
-force -freeze sim:/test/Clock 1'h0 0
-run 100
-force -freeze sim:/test/Clock 1'h1 0
-run 100
-force -freeze sim:/test/Clock 1'h0 0
-force -freeze sim:/test/DataIn 7'h50 0
-run 100
-force -freeze sim:/test/Load 1'h1 0
-force -freeze sim:/test/Clock 1'h1 0
-run 100
-force -freeze sim:/test/Clock 1'h0 0
-force -freeze sim:/test/Load 1'h0 0
-run 100
-force -freeze sim:/test/Clear 1'h1 0
-force -freeze sim:/test/Clock 1'h1 0
+sim:/memoryUnit/CLOCK \
+sim:/memoryUnit/CLEAR \
+sim:/memoryUnit/WRITE \
+sim:/memoryUnit/ENABLE \
+sim:/memoryUnit/LOAD \
+sim:/memoryUnit/SELECT \
+sim:/memoryUnit/pin_name1 \
+sim:/memoryUnit/pin_name2 \
+sim:/memoryUnit/pin_name3 \
+sim:/memoryUnit/pin_name4 \
+sim:/memoryUnit/pin_name5 \
+sim:/memoryUnit/pin_name6 \
+sim:/memoryUnit/pin_name7 \
+sim:/memoryUnit/REGISTER0_OUT \
+sim:/memoryUnit/REGISTER1_OUT \
+sim:/memoryUnit/REGISTER2_OUT \
+sim:/memoryUnit/REGISTER3_OUT \
+sim:/memoryUnit/SELECTED_REGISTER
+force -freeze sim:/memoryUnit/SELECT 2'h00 0
+force -freeze sim:/memoryUnit/ENABLE 1'h1 0
+force -freeze sim:/memoryUnit/WRITE 1'h1 0
+force -freeze sim:/memoryUnit/CLOCK 1'h1 0
 run 100
 quit -sim
-# End time: 14:52:21 on Apr 27,2024, Elapsed time: 0:02:58
+# End time: 13:36:21 on Apr 28,2024, Elapsed time: 0:06:12
+# Errors: 0, Warnings: 6
+vsim -gui work.seven_seg_decoder_7b
+# vsim -gui work.seven_seg_decoder_7b 
+# Start time: 13:36:32 on Apr 28,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.seven_seg_decoder_7b(fast)
+add wave -position insertpoint  \
+sim:/seven_seg_decoder_7b/score \
+sim:/seven_seg_decoder_7b/en \
+sim:/seven_seg_decoder_7b/clear \
+sim:/seven_seg_decoder_7b/A \
+sim:/seven_seg_decoder_7b/B \
+sim:/seven_seg_decoder_7b/C \
+sim:/seven_seg_decoder_7b/D \
+sim:/seven_seg_decoder_7b/E \
+sim:/seven_seg_decoder_7b/F \
+sim:/seven_seg_decoder_7b/G
+force -freeze sim:/seven_seg_decoder_7b/en 1'h1 0
+force -freeze sim:/seven_seg_decoder_7b/clear 1'h0 0
+force -freeze sim:/seven_seg_decoder_7b/score 7'h5f 0
+run 100
+force -freeze sim:/seven_seg_decoder_7b/score 7'h75 0
+run 100
+quit -sim
+# End time: 13:39:09 on Apr 28,2024, Elapsed time: 0:02:37
+# Errors: 0, Warnings: 1
+vsim -gui work.memoryUnit
+# vsim -gui work.memoryUnit 
+# Start time: 13:39:17 on Apr 28,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.memoryUnit(fast)
+add wave -position insertpoint  \
+sim:/memoryUnit/CLOCK \
+sim:/memoryUnit/CLEAR \
+sim:/memoryUnit/WRITE \
+sim:/memoryUnit/ENABLE \
+sim:/memoryUnit/LOAD \
+sim:/memoryUnit/SELECT \
+sim:/memoryUnit/pin_name1 \
+sim:/memoryUnit/pin_name2 \
+sim:/memoryUnit/pin_name3 \
+sim:/memoryUnit/pin_name4 \
+sim:/memoryUnit/pin_name5 \
+sim:/memoryUnit/pin_name6 \
+sim:/memoryUnit/pin_name7 \
+sim:/memoryUnit/REGISTER0_OUT \
+sim:/memoryUnit/REGISTER1_OUT \
+sim:/memoryUnit/REGISTER2_OUT \
+sim:/memoryUnit/REGISTER3_OUT \
+sim:/memoryUnit/SELECTED_REGISTER
+force -freeze sim:/memoryUnit/LOAD 7'h85 0
+force -freeze sim:/memoryUnit/ENABLE 1'h1 0
+force -freeze sim:/memoryUnit/CLEAR 1'h0 0
+force -freeze sim:/memoryUnit/WRITE 1'h1 0
+force -freeze sim:/memoryUnit/CLOCK 1'h1 0
+force -freeze sim:/memoryUnit/CLOCK 1 0, 0 {50 ns} -r 100
+run 100
+force -freeze sim:/memoryUnit/SELECT 2'h00 0
+run 100
+force -freeze sim:/memoryUnit/LOAD 7'h5f 0
+run 100
+force -freeze sim:/memoryUnit/LOAD 7'd76 0
+run 100
+# Causality operation skipped due to absence of debug database file
+force -freeze sim:/memoryUnit/LOAD 7'd20 0
+run 100
+force -freeze sim:/memoryUnit/LOAD 7'h35 0
+run 100
+force -freeze sim:/memoryUnit/LOAD 7'd35 0
+run 100
+force -freeze sim:/memoryUnit/LOAD 7'd65 0
+run 100
+quit -sim
+# End time: 13:50:55 on Apr 28,2024, Elapsed time: 0:11:38
+# Errors: 0, Warnings: 1
+# Optimization canceled
+vsim -gui work.reg7
+# vsim -gui work.reg7 
+# Start time: 13:52:47 on Apr 28,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.reg7(fast)
+add wave -position insertpoint  \
+sim:/reg7/CLK \
+sim:/reg7/clr \
+sim:/reg7/ld \
+sim:/reg7/Din \
+sim:/reg7/Dout
+force -freeze sim:/reg7/CLK 1 0, 0 {50 ns} -r 100
+force -freeze sim:/reg7/clr 1'h0 0
+force -freeze sim:/reg7/ld 1'h1 0
+force -freeze sim:/reg7/Din 7'd95 0
+run 100
+force -freeze sim:/reg7/ld 1'h0 0
+run 100
+force -freeze sim:/reg7/Din 7'd15 0
+run 100
+run 100
+force -freeze sim:/reg7/clr 1'h1 0
+run 100
+run 100
+force -freeze sim:/reg7/clr 1'h0 0
+force -freeze sim:/reg7/ld 1'd65 0
+force -freeze sim:/reg7/ld 1'h1 0
+run 100
+run 100
+quit -sim
+# End time: 13:56:40 on Apr 28,2024, Elapsed time: 0:03:53
+# Errors: 0, Warnings: 1
+vsim -gui work.mux4_to_1_7b
+# vsim -gui work.mux4_to_1_7b 
+# Start time: 13:56:47 on Apr 28,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.mux4_to_1_7b(fast)
+add wave -position insertpoint  \
+sim:/mux4_to_1_7b/a \
+sim:/mux4_to_1_7b/b \
+sim:/mux4_to_1_7b/c \
+sim:/mux4_to_1_7b/d \
+sim:/mux4_to_1_7b/sel \
+sim:/mux4_to_1_7b/out
+force -freeze sim:/mux4_to_1_7b/a 7'd70 0
+force -freeze sim:/mux4_to_1_7b/b 7'd50 0
+force -freeze sim:/mux4_to_1_7b/c 7'd95 0
+force -freeze sim:/mux4_to_1_7b/d 7'd35 0
+force -freeze sim:/mux4_to_1_7b/sel 2'h00 0
+run 100
+force -freeze sim:/mux4_to_1_7b/sel 2'h1 0
+run 100
+force -freeze sim:/mux4_to_1_7b/sel 2'h 0
+force -freeze sim:/mux4_to_1_7b/sel 2'h2 0
+run 100
+force -freeze sim:/mux4_to_1_7b/sel 2'h3 0
+run 100
+quit -sim
+# End time: 14:00:22 on Apr 28,2024, Elapsed time: 0:03:35
+# Errors: 0, Warnings: 1
+vsim -gui work.memoryUnit
+# vsim -gui work.memoryUnit 
+# Start time: 14:00:32 on Apr 28,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.memoryUnit(fast)
+add wave -position insertpoint  \
+sim:/memoryUnit/CLOCK \
+sim:/memoryUnit/CLEAR \
+sim:/memoryUnit/WRITE \
+sim:/memoryUnit/ENABLE \
+sim:/memoryUnit/LOAD \
+sim:/memoryUnit/SELECT \
+sim:/memoryUnit/pin_name1 \
+sim:/memoryUnit/pin_name2 \
+sim:/memoryUnit/pin_name3 \
+sim:/memoryUnit/pin_name4 \
+sim:/memoryUnit/pin_name5 \
+sim:/memoryUnit/pin_name6 \
+sim:/memoryUnit/pin_name7 \
+sim:/memoryUnit/REGISTER0_OUT \
+sim:/memoryUnit/REGISTER1_OUT \
+sim:/memoryUnit/REGISTER2_OUT \
+sim:/memoryUnit/REGISTER3_OUT \
+sim:/memoryUnit/SELECTED_REGISTER
+force -freeze sim:/memoryUnit/CLOCK 1 0, 0 {50 ns} -r 100
+force -freeze sim:/memoryUnit/CLEAR 1'h0 0
+force -freeze sim:/memoryUnit/WRITE 1'h1 0
+force -freeze sim:/memoryUnit/ENABLE 1'h1` 0
+# Invalid hexadecimal digit: `.
+# ** UI-Msg (Error): (vsim-4011) Invalid force value: 1'h1` 0.
+# 
+force -freeze sim:/memoryUnit/ENABLE 1'h1 0
+force -freeze sim:/memoryUnit/LOAD 7'd75 0
+force -freeze sim:/memoryUnit/SELECT 2'h1 0
+run 100
+run 100
+quit -sim
+# End time: 14:03:58 on Apr 28,2024, Elapsed time: 0:03:26
+# Errors: 0, Warnings: 1
+# Compile of decoder_2_to_4.v was successful.
+# Compile of mux4_to_1_7b.v was successful.
+# Compile of reg7.v was successful.
+# Compile of seven_seg_decoder7b.v was successful.
+# Compile of memoryUnit.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.memoryUnit
+# vsim -gui work.memoryUnit 
+# Start time: 14:04:11 on Apr 28,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.memoryUnit(fast)
+add wave -position insertpoint  \
+sim:/memoryUnit/CLOCK \
+sim:/memoryUnit/CLEAR \
+sim:/memoryUnit/WRITE \
+sim:/memoryUnit/ENABLE \
+sim:/memoryUnit/LOAD \
+sim:/memoryUnit/SELECT \
+sim:/memoryUnit/pin_name1 \
+sim:/memoryUnit/pin_name2 \
+sim:/memoryUnit/pin_name3 \
+sim:/memoryUnit/pin_name4 \
+sim:/memoryUnit/pin_name5 \
+sim:/memoryUnit/pin_name6 \
+sim:/memoryUnit/pin_name7 \
+sim:/memoryUnit/REGISTER0_OUT \
+sim:/memoryUnit/REGISTER1_OUT \
+sim:/memoryUnit/REGISTER2_OUT \
+sim:/memoryUnit/REGISTER3_OUT \
+sim:/memoryUnit/SELECTED_REGISTER \
+sim:/memoryUnit/TEST_OUT
+force -freeze sim:/memoryUnit/CLOCK 1 0, 0 {50 ns} -r 100
+force -freeze sim:/memoryUnit/CLEAR 1'h0 0
+force -freeze sim:/memoryUnit/WRITE 1'h1 0
+force -freeze sim:/memoryUnit/ENABLE 1'h1 0
+force -freeze sim:/memoryUnit/LOAD 7'd93 0
+force -freeze sim:/memoryUnit/SELECT 2'h1 0
+run 100
+run 100
+quit -sim
+# End time: 14:06:03 on Apr 28,2024, Elapsed time: 0:01:52
+# Errors: 0, Warnings: 2
+# Compile of decoder_2_to_4.v was successful.
+# Compile of mux4_to_1_7b.v was successful.
+# Compile of reg7.v was successful.
+# Compile of seven_seg_decoder7b.v was successful.
+# Compile of memoryUnit.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.memoryUnit
+# vsim -gui work.memoryUnit 
+# Start time: 14:06:17 on Apr 28,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.memoryUnit(fast)
+add wave -position insertpoint  \
+sim:/memoryUnit/CLOCK \
+sim:/memoryUnit/CLEAR \
+sim:/memoryUnit/WRITE \
+sim:/memoryUnit/ENABLE \
+sim:/memoryUnit/LOAD \
+sim:/memoryUnit/SELECT \
+sim:/memoryUnit/pin_name1 \
+sim:/memoryUnit/pin_name2 \
+sim:/memoryUnit/pin_name3 \
+sim:/memoryUnit/pin_name4 \
+sim:/memoryUnit/pin_name5 \
+sim:/memoryUnit/pin_name6 \
+sim:/memoryUnit/pin_name7 \
+sim:/memoryUnit/TEST_LOAD_OUT \
+sim:/memoryUnit/REGISTER0_OUT \
+sim:/memoryUnit/REGISTER1_OUT \
+sim:/memoryUnit/REGISTER2_OUT \
+sim:/memoryUnit/REGISTER3_OUT \
+sim:/memoryUnit/SELECTED_REGISTER \
+sim:/memoryUnit/TEST_OUT
+force -freeze sim:/memoryUnit/CLOCK 1 0, 0 {50 ns} -r 100
+force -freeze sim:/memoryUnit/CLEAR 1'h0 0
+force -freeze sim:/memoryUnit/WRITE 1'h1 0
+force -freeze sim:/memoryUnit/ENABLE 1'h1 0
+force -freeze sim:/memoryUnit/LOAD 7'd95 0
+force -freeze sim:/memoryUnit/SELECT 2'h1 0
+run 100
+quit -sim
+# End time: 14:12:21 on Apr 28,2024, Elapsed time: 0:06:04
+# Errors: 0, Warnings: 2
+# Compile of decoder_2_to_4.v was successful.
+# Compile of mux4_to_1_7b.v was successful.
+# Compile of reg7.v was successful.
+# Compile of seven_seg_decoder7b.v was successful.
+# Compile of memoryUnit.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.memoryUnit
+# vsim -gui work.memoryUnit 
+# Start time: 14:12:35 on Apr 28,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.memoryUnit(fast)
+add wave -position insertpoint  \
+sim:/memoryUnit/CLOCK \
+sim:/memoryUnit/CLEAR \
+sim:/memoryUnit/WRITE \
+sim:/memoryUnit/ENABLE \
+sim:/memoryUnit/LOAD \
+sim:/memoryUnit/SELECT \
+sim:/memoryUnit/pin_name1 \
+sim:/memoryUnit/pin_name2 \
+sim:/memoryUnit/pin_name3 \
+sim:/memoryUnit/pin_name4 \
+sim:/memoryUnit/pin_name5 \
+sim:/memoryUnit/pin_name6 \
+sim:/memoryUnit/pin_name7 \
+sim:/memoryUnit/TEST_LOAD_OUT \
+sim:/memoryUnit/REGISTER0_OUT \
+sim:/memoryUnit/REGISTER1_OUT \
+sim:/memoryUnit/REGISTER2_OUT \
+sim:/memoryUnit/REGISTER3_OUT \
+sim:/memoryUnit/SELECTED_REGISTER \
+sim:/memoryUnit/TEST_OUT
+force -freeze sim:/memoryUnit/CLOCK 1 0, 0 {50 ns} -r 100
+force -freeze sim:/memoryUnit/CLEAR 1'h0 0
+force -freeze sim:/memoryUnit/WRITE 1'h1 0
+force -freeze sim:/memoryUnit/ENABLE 1'h1 0
+force -freeze sim:/memoryUnit/LOAD 7'd95 0
+force -freeze sim:/memoryUnit/SELECT 2'h1 0
+run 100
+force -freeze sim:/memoryUnit/CLEAR 1'h1 0
+force -freeze sim:/memoryUnit/WRITE 1'h0 0
+run 100
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.memoryUnit(fast)
+# Compile of decoder_2_to_4.v was successful.
+# Compile of mux4_to_1_7b.v was successful.
+# Compile of reg7.v was successful.
+# Compile of seven_seg_decoder7b.v was successful.
+# Compile of memoryUnit.v was successful.
+# 5 compiles, 0 failed with no errors.
+quit -sim
+# End time: 14:14:57 on Apr 28,2024, Elapsed time: 0:02:22
+# Errors: 0, Warnings: 2
+vsim -gui work.memoryUnit
+# vsim -gui work.memoryUnit 
+# Start time: 14:15:02 on Apr 28,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.memoryUnit(fast)
+add wave -position insertpoint  \
+sim:/memoryUnit/CLOCK \
+sim:/memoryUnit/CLEAR \
+sim:/memoryUnit/WRITE \
+sim:/memoryUnit/ENABLE \
+sim:/memoryUnit/LOAD \
+sim:/memoryUnit/SELECT \
+sim:/memoryUnit/pin_name1 \
+sim:/memoryUnit/pin_name2 \
+sim:/memoryUnit/pin_name3 \
+sim:/memoryUnit/pin_name4 \
+sim:/memoryUnit/pin_name5 \
+sim:/memoryUnit/pin_name6 \
+sim:/memoryUnit/pin_name7 \
+sim:/memoryUnit/TEST_LOAD_OUT \
+sim:/memoryUnit/REGISTER0_OUT \
+sim:/memoryUnit/REGISTER1_OUT \
+sim:/memoryUnit/REGISTER2_OUT \
+sim:/memoryUnit/REGISTER3_OUT \
+sim:/memoryUnit/SELECTED_REGISTER \
+sim:/memoryUnit/TEST_OUT
+force -freeze sim:/memoryUnit/CLOCK 1 0, 0 {50 ns} -r 100
+force -freeze sim:/memoryUnit/CLEAR 1'h0 0
+noforce sim:/memoryUnit/WRITE
+noforce sim:/memoryUnit/WRITE
+force -freeze sim:/memoryUnit/WRITE 1'h1 0
+force -freeze sim:/memoryUnit/ENABLE 1'h1 0
+force -freeze sim:/memoryUnit/LOAD 7'd95 0
+force -freeze sim:/memoryUnit/SELECT 2'h1 0
+run 100
+run 100
+force -freeze sim:/memoryUnit/CLEAR 1'h1 0
+force -freeze sim:/memoryUnit/WRITE 1'h0 0
+run 100
+run 100
+force -freeze sim:/memoryUnit/SELECT 2'h3 0
+force -freeze sim:/memoryUnit/LOAD 7'h50 0
+run 100
+run 100
+quit -sim
+# End time: 14:21:53 on Apr 28,2024, Elapsed time: 0:06:51
+# Errors: 0, Warnings: 1
+vsim -gui work.memoryUnit
+# vsim -gui work.memoryUnit 
+# Start time: 14:22:02 on Apr 28,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.memoryUnit(fast)
+add wave -position insertpoint  \
+sim:/memoryUnit/CLOCK \
+sim:/memoryUnit/CLEAR \
+sim:/memoryUnit/WRITE \
+sim:/memoryUnit/ENABLE \
+sim:/memoryUnit/LOAD \
+sim:/memoryUnit/SELECT \
+sim:/memoryUnit/pin_name1 \
+sim:/memoryUnit/pin_name2 \
+sim:/memoryUnit/pin_name3 \
+sim:/memoryUnit/pin_name4 \
+sim:/memoryUnit/pin_name5 \
+sim:/memoryUnit/pin_name6 \
+sim:/memoryUnit/pin_name7 \
+sim:/memoryUnit/TEST_LOAD_OUT \
+sim:/memoryUnit/REGISTER0_OUT \
+sim:/memoryUnit/REGISTER1_OUT \
+sim:/memoryUnit/REGISTER2_OUT \
+sim:/memoryUnit/REGISTER3_OUT \
+sim:/memoryUnit/SELECTED_REGISTER \
+sim:/memoryUnit/TEST_OUT
+# Compile of decoder_2_to_4.v was successful.
+# Compile of mux4_to_1_7b.v was successful.
+# Compile of reg7.v was successful.
+# Compile of seven_seg_decoder7b.v was successful.
+# Compile of memoryUnit.v was successful.
+# 5 compiles, 0 failed with no errors.
+quit -sim
+# End time: 14:22:11 on Apr 28,2024, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 2
+vsim -gui work.memoryUnit
+# vsim -gui work.memoryUnit 
+# Start time: 14:22:23 on Apr 28,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.memoryUnit(fast)
+add wave -position insertpoint  \
+sim:/memoryUnit/CLOCK \
+sim:/memoryUnit/ENABLE \
+sim:/memoryUnit/WRITE \
+sim:/memoryUnit/CLEAR \
+sim:/memoryUnit/LOAD \
+sim:/memoryUnit/SELECT \
+sim:/memoryUnit/pin_name1 \
+sim:/memoryUnit/pin_name2 \
+sim:/memoryUnit/pin_name3 \
+sim:/memoryUnit/pin_name4 \
+sim:/memoryUnit/pin_name5 \
+sim:/memoryUnit/pin_name6 \
+sim:/memoryUnit/pin_name7 \
+sim:/memoryUnit/TEST_LOAD_OUT \
+sim:/memoryUnit/REGISTER0_OUT \
+sim:/memoryUnit/REGISTER1_OUT \
+sim:/memoryUnit/REGISTER2_OUT \
+sim:/memoryUnit/REGISTER3_OUT \
+sim:/memoryUnit/SELECTED_REGISTER \
+sim:/memoryUnit/TEST_OUT
+force -freeze sim:/memoryUnit/CLOCK 1 0, 0 {50 ns} -r 100
+force -freeze sim:/memoryUnit/ENABLE 1'h1 0
+force -freeze sim:/memoryUnit/WRITE 1'h1 0
+force -freeze sim:/memoryUnit/CLEAR 1'h0 0
+force -freeze sim:/memoryUnit/LOAD 7'h50 0
+force -freeze sim:/memoryUnit/SELECT 2'h1 0
+run 100
+force -freeze sim:/memoryUnit/SELECT 2'h2 0
+force -freeze sim:/memoryUnit/LOAD 7'h55 0
+run 100
+run 100
+force -freeze sim:/memoryUnit/SELECT 2'h0 0
+force -freeze sim:/memoryUnit/LOAD 7'h36 0
+run 100
+run 100
+force -freeze sim:/memoryUnit/SELECT 2'h1\\ 0
+# Invalid hexadecimal digit: \.
+# ** UI-Msg (Error): (vsim-4011) Invalid force value: 2'h1\\ 0.
+# 
+force -freeze sim:/memoryUnit/SELECT 2'h1 0
+force -freeze sim:/memoryUnit/CLEAR 1'h1 0
+force -freeze sim:/memoryUnit/WRITE 1'h0 0
+run 100
+run 100
+quit -sim
+# End time: 14:30:18 on Apr 28,2024, Elapsed time: 0:07:55
+# Errors: 0, Warnings: 1
+# Compile of decoder_2_to_4.v was successful.
+# Compile of mux4_to_1_7b.v was successful.
+# Compile of reg7.v was successful.
+# Compile of seven_seg_decoder7b.v was successful.
+# Compile of memoryUnit.v was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of memoryUnit.v was successful.
+vsim -gui work.memoryUnit
+# vsim -gui work.memoryUnit 
+# Start time: 14:30:45 on Apr 28,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.memoryUnit(fast)
+add wave -position insertpoint  \
+sim:/memoryUnit/CLOCK \
+sim:/memoryUnit/ENABLE \
+sim:/memoryUnit/WRITE \
+sim:/memoryUnit/CLEAR \
+sim:/memoryUnit/LOAD \
+sim:/memoryUnit/SELECT \
+sim:/memoryUnit/REGISTER0_OUT \
+sim:/memoryUnit/REGISTER1_OUT \
+sim:/memoryUnit/REGISTER2_OUT \
+sim:/memoryUnit/REGISTER3_OUT \
+sim:/memoryUnit/SELECTED_REGISTER
+force -freeze sim:/memoryUnit/CLOCK 1 0, 0 {50 ns} -r 100
+force -freeze sim:/memoryUnit/ENABLE 1'h1 0
+force -freeze sim:/memoryUnit/WRITE 1'h1 0
+force -freeze sim:/memoryUnit/CLEAR 1'h0 0
+force -freeze sim:/memoryUnit/LOAD 7'h5b 0
+force -freeze sim:/memoryUnit/SELECT 2'h3 0
+run 100
+force -freeze sim:/memoryUnit/SELECT 2'h2 0
+force -freeze sim:/memoryUnit/SELECT 2'h2 0
+force -freeze sim:/memoryUnit/LOAD 7'h5c 0
+run 100
+run 100
+force -freeze sim:/memoryUnit/SELECT 2'h1 0
+run 100
+run 100
+force -freeze sim:/memoryUnit/ENABLE 1'h0 0
+force -freeze sim:/memoryUnit/SELECT 2'h3 0
+force -freeze sim:/memoryUnit/LOAD 7'h4b 0
+run 100
+run 100
+# End time: 14:50:33 on Apr 28,2024, Elapsed time: 0:19:48
 # Errors: 0, Warnings: 3
