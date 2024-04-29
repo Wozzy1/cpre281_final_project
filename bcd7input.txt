@@ -1,7 +1,4 @@
-module bcd7input(
-input [6:0] input;
-output reg[6:0] segments;)
-;
+module bcd7input(inputbit [6:0] input,output reg[6:0] segments;);
 
 always @(*) begin 
 case(input)
