@@ -15,14 +15,14 @@
 
 // PROGRAM		"Quartus Prime"
 // VERSION		"Version 22.1std.1 Build 917 02/14/2023 SC Standard Edition"
-// CREATED		"Fri Apr 26 21:55:22 2024"
+// CREATED		"Mon Apr 29 19:28:10 2024"
 
 
 module lpm_constant_0(result);
-output [6:0] result;
+output [8:0] result;
 
 lpm_constant	lpm_instance(.result(result));
-	defparam	lpm_instance.LPM_CVALUE = 7'b0000000;
-	defparam	lpm_instance.LPM_WIDTH = 7;
+	defparam	lpm_instance.LPM_CVALUE = 9'b111111111;
+	defparam	lpm_instance.LPM_WIDTH = 9;
 
 endmodule

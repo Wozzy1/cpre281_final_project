@@ -1,0 +1,36 @@
+X:/cpre281/finalproject/cpre281_final_project/decoder_2_to_4.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/decoder_2_to_4.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module decoder2_to_4
+
+Top level modules:
+	decoder2_to_4
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/mux4_to_1_7b.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/mux4_to_1_7b.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module mux4_to_1_7b
+
+Top level modules:
+	mux4_to_1_7b
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module seven_seg_decoder_7b
+
+Top level modules:
+	seven_seg_decoder_7b
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/reg7.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/reg7.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module reg7
+
+Top level modules:
+	reg7
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/memoryUnit.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/memoryUnit.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module memoryUnit
+
+Top level modules:
+	memoryUnit
+
+} {} {}}

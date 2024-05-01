@@ -4,195 +4,279 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "REGISTER0_OUT[6]",
+					"name" : "SEG40",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER0_OUT[5]",
+					"name" : "SEG41",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER0_OUT[4]",
+					"name" : "SEG42",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER0_OUT[3]",
+					"name" : "SEG43",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER0_OUT[2]",
+					"name" : "SEG45",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER0_OUT[1]",
+					"name" : "SEG46",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER0_OUT[0]",
+					"name" : "SEG50",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER1_OUT[6]",
+					"name" : "SEG51",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER1_OUT[5]",
+					"name" : "SEG52",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER1_OUT[4]",
+					"name" : "SEG53",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER1_OUT[3]",
+					"name" : "SEG55",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER1_OUT[2]",
+					"name" : "SEG56",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER1_OUT[1]",
+					"name" : "SEG60",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER1_OUT[0]",
+					"name" : "SEG61",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER2_OUT[6]",
+					"name" : "SEG62",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER2_OUT[5]",
+					"name" : "SEG63",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER2_OUT[4]",
+					"name" : "SEG65",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER2_OUT[3]",
+					"name" : "SEG66",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER2_OUT[2]",
+					"name" : "SEG70",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER2_OUT[1]",
+					"name" : "SEG71",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER2_OUT[0]",
+					"name" : "SEG72",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER3_OUT[6]",
+					"name" : "SEG73",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER3_OUT[5]",
+					"name" : "SEG75",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER3_OUT[4]",
+					"name" : "SEG76",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER3_OUT[3]",
+					"name" : "SEG00",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER3_OUT[2]",
+					"name" : "SEG01",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER3_OUT[1]",
+					"name" : "SEG02",
 					"strict" : false
 				},
 				{
-					"name" : "REGISTER3_OUT[0]",
+					"name" : "SEG03",
 					"strict" : false
 				},
 				{
-					"name" : "SELECTED_REGISTER[6]",
+					"name" : "SEG04",
 					"strict" : false
 				},
 				{
-					"name" : "SELECTED_REGISTER[5]",
+					"name" : "SEG05",
 					"strict" : false
 				},
 				{
-					"name" : "SELECTED_REGISTER[4]",
+					"name" : "SEG06",
 					"strict" : false
 				},
 				{
-					"name" : "SELECTED_REGISTER[3]",
+					"name" : "SEG10",
 					"strict" : false
 				},
 				{
-					"name" : "SELECTED_REGISTER[2]",
+					"name" : "SEG11",
 					"strict" : false
 				},
 				{
-					"name" : "SELECTED_REGISTER[1]",
+					"name" : "SEG12",
 					"strict" : false
 				},
 				{
-					"name" : "SELECTED_REGISTER[0]",
+					"name" : "SEG13",
 					"strict" : false
 				},
 				{
-					"name" : "SELECT[1]",
+					"name" : "SEG14",
 					"strict" : false
 				},
 				{
-					"name" : "SELECT[0]",
+					"name" : "SEG15",
 					"strict" : false
 				},
 				{
-					"name" : "LOAD[6]",
+					"name" : "SEG16",
 					"strict" : false
 				},
 				{
-					"name" : "ENABLE",
+					"name" : "OF",
 					"strict" : false
 				},
 				{
-					"name" : "WRITE",
+					"name" : "TEST_RESET",
 					"strict" : false
 				},
 				{
-					"name" : "CLOCK",
+					"name" : "TEST_WRITE",
 					"strict" : false
 				},
 				{
-					"name" : "CLEAR",
+					"name" : "TEST_CLEAR",
 					"strict" : false
 				},
 				{
-					"name" : "LOAD[5]",
+					"name" : "TEST_W",
 					"strict" : false
 				},
 				{
-					"name" : "LOAD[4]",
+					"name" : "SEG30",
 					"strict" : false
 				},
 				{
-					"name" : "LOAD[3]",
+					"name" : "SEG32",
 					"strict" : false
 				},
 				{
-					"name" : "LOAD[2]",
+					"name" : "SEG33",
 					"strict" : false
 				},
 				{
-					"name" : "LOAD[1]",
+					"name" : "SEG34",
 					"strict" : false
 				},
 				{
-					"name" : "LOAD[0]",
+					"name" : "SEG35",
+					"strict" : false
+				},
+				{
+					"name" : "SEG36",
+					"strict" : false
+				},
+				{
+					"name" : "TEST_BINARY[6]",
+					"strict" : false
+				},
+				{
+					"name" : "TEST_BINARY[5]",
+					"strict" : false
+				},
+				{
+					"name" : "TEST_BINARY[4]",
+					"strict" : false
+				},
+				{
+					"name" : "TEST_BINARY[3]",
+					"strict" : false
+				},
+				{
+					"name" : "TEST_BINARY[2]",
+					"strict" : false
+				},
+				{
+					"name" : "TEST_BINARY[1]",
+					"strict" : false
+				},
+				{
+					"name" : "TEST_BINARY[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "Write",
+					"strict" : false
+				},
+				{
+					"name" : "Clear",
+					"strict" : false
+				},
+				{
+					"name" : "W",
+					"strict" : false
+				},
+				{
+					"name" : "Data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Enable",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "Data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[0]",
 					"strict" : false
 				}
 			]

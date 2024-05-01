@@ -6,7 +6,7 @@ module reg7 (CLK, clr, ld, Din, Dout);
   output [6:0] Dout;
   reg [6:0] Dout;
   always @(posedge CLK) begin
-    if (clr) Dout <= 0;
-    else if (ld) Dout <= Din;
+    if (ld) Dout <= 0;
+    else if (clr) Dout <= Din;
   end
 endmodule // shiftReg

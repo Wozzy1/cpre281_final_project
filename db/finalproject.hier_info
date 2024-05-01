@@ -1,4 +1,166 @@
-|memoryUnit
+|main
+SEG40 <= seven_seg_decoder_7b:inst5.A
+Enable => memoryUnit:inst.ENABLE
+Write => memoryUnit:inst.WRITE
+Write => TEST_WRITE.DATAIN
+Clear => memoryUnit:inst.CLEAR
+Clear => TEST_CLEAR.DATAIN
+Clock => memoryUnit:inst.CLOCK
+Clock => FSM:inst1.Clock
+Data[0] => memoryUnit:inst.LOAD[0]
+Data[1] => memoryUnit:inst.LOAD[1]
+Data[2] => memoryUnit:inst.LOAD[2]
+Data[3] => memoryUnit:inst.LOAD[3]
+Data[4] => memoryUnit:inst.LOAD[4]
+Data[5] => memoryUnit:inst.LOAD[5]
+Data[6] => memoryUnit:inst.LOAD[6]
+Reset => FSM:inst1.Reset
+Reset => TEST_RESET.DATAIN
+W => FSM:inst1.W
+W => TEST_W.DATAIN
+SEG41 <= seven_seg_decoder_7b:inst5.B
+SEG42 <= seven_seg_decoder_7b:inst5.C
+SEG43 <= seven_seg_decoder_7b:inst5.D
+SEG44 <= seven_seg_decoder_7b:inst5.E
+SEG45 <= seven_seg_decoder_7b:inst5.F
+SEG46 <= seven_seg_decoder_7b:inst5.G
+SEG50 <= seven_seg_decoder_7b:inst6.A
+SEG51 <= seven_seg_decoder_7b:inst6.B
+SEG52 <= seven_seg_decoder_7b:inst6.C
+SEG53 <= seven_seg_decoder_7b:inst6.D
+SEG54 <= seven_seg_decoder_7b:inst6.E
+SEG55 <= seven_seg_decoder_7b:inst6.F
+SEG56 <= seven_seg_decoder_7b:inst6.G
+SEG60 <= seven_seg_decoder_7b:inst7.A
+SEG61 <= seven_seg_decoder_7b:inst7.B
+SEG62 <= seven_seg_decoder_7b:inst7.C
+SEG63 <= seven_seg_decoder_7b:inst7.D
+SEG64 <= seven_seg_decoder_7b:inst7.E
+SEG65 <= seven_seg_decoder_7b:inst7.F
+SEG66 <= seven_seg_decoder_7b:inst7.G
+SEG70 <= seven_seg_decoder_7b:inst8.A
+SEG71 <= seven_seg_decoder_7b:inst8.B
+SEG72 <= seven_seg_decoder_7b:inst8.C
+SEG73 <= seven_seg_decoder_7b:inst8.D
+SEG74 <= seven_seg_decoder_7b:inst8.E
+SEG75 <= seven_seg_decoder_7b:inst8.F
+SEG76 <= seven_seg_decoder_7b:inst8.G
+SEG00 <= binaryDisplay:inst3.TENS0
+SEG01 <= binaryDisplay:inst3.TENS1
+SEG02 <= binaryDisplay:inst3.TENS2
+SEG03 <= binaryDisplay:inst3.TENS3
+SEG04 <= binaryDisplay:inst3.TENS4
+SEG05 <= binaryDisplay:inst3.TENS5
+SEG06 <= binaryDisplay:inst3.TENS6
+SEG10 <= binaryDisplay:inst3.ONES0
+SEG11 <= binaryDisplay:inst3.ONES1
+SEG12 <= binaryDisplay:inst3.ONES2
+SEG13 <= binaryDisplay:inst3.ONES3
+SEG14 <= binaryDisplay:inst3.ONES4
+SEG15 <= binaryDisplay:inst3.ONES5
+SEG16 <= binaryDisplay:inst3.ONES6
+OF <= binaryDisplay:inst3.OVERFLOW
+TEST_RESET <= Reset.DB_MAX_OUTPUT_PORT_TYPE
+TEST_WRITE <= Write.DB_MAX_OUTPUT_PORT_TYPE
+TEST_CLEAR <= Clear.DB_MAX_OUTPUT_PORT_TYPE
+TEST_W <= W.DB_MAX_OUTPUT_PORT_TYPE
+SEG30 <= segments[6].DB_MAX_OUTPUT_PORT_TYPE
+SEG31 <= segments[5].DB_MAX_OUTPUT_PORT_TYPE
+SEG32 <= segments[4].DB_MAX_OUTPUT_PORT_TYPE
+SEG33 <= segments[3].DB_MAX_OUTPUT_PORT_TYPE
+SEG34 <= segments[2].DB_MAX_OUTPUT_PORT_TYPE
+SEG35 <= segments[1].DB_MAX_OUTPUT_PORT_TYPE
+SEG36 <= segments[0].DB_MAX_OUTPUT_PORT_TYPE
+TEST_BINARY[0] <= memoryUnit:inst.SELECTED_REGISTER[0]
+TEST_BINARY[1] <= memoryUnit:inst.SELECTED_REGISTER[1]
+TEST_BINARY[2] <= memoryUnit:inst.SELECTED_REGISTER[2]
+TEST_BINARY[3] <= memoryUnit:inst.SELECTED_REGISTER[3]
+TEST_BINARY[4] <= memoryUnit:inst.SELECTED_REGISTER[4]
+TEST_BINARY[5] <= memoryUnit:inst.SELECTED_REGISTER[5]
+TEST_BINARY[6] <= memoryUnit:inst.SELECTED_REGISTER[6]
+
+
+|main|seven_seg_decoder_7b:inst5
+score[0] => LessThan0.IN14
+score[0] => LessThan1.IN14
+score[0] => LessThan2.IN14
+score[0] => LessThan3.IN14
+score[0] => LessThan4.IN14
+score[0] => LessThan5.IN14
+score[0] => LessThan6.IN14
+score[0] => LessThan7.IN14
+score[0] => LessThan8.IN14
+score[0] => LessThan9.IN14
+score[1] => LessThan0.IN13
+score[1] => LessThan1.IN13
+score[1] => LessThan2.IN13
+score[1] => LessThan3.IN13
+score[1] => LessThan4.IN13
+score[1] => LessThan5.IN13
+score[1] => LessThan6.IN13
+score[1] => LessThan7.IN13
+score[1] => LessThan8.IN13
+score[1] => LessThan9.IN13
+score[2] => LessThan0.IN12
+score[2] => LessThan1.IN12
+score[2] => LessThan2.IN12
+score[2] => LessThan3.IN12
+score[2] => LessThan4.IN12
+score[2] => LessThan5.IN12
+score[2] => LessThan6.IN12
+score[2] => LessThan7.IN12
+score[2] => LessThan8.IN12
+score[2] => LessThan9.IN12
+score[3] => LessThan0.IN11
+score[3] => LessThan1.IN11
+score[3] => LessThan2.IN11
+score[3] => LessThan3.IN11
+score[3] => LessThan4.IN11
+score[3] => LessThan5.IN11
+score[3] => LessThan6.IN11
+score[3] => LessThan7.IN11
+score[3] => LessThan8.IN11
+score[3] => LessThan9.IN11
+score[4] => LessThan0.IN10
+score[4] => LessThan1.IN10
+score[4] => LessThan2.IN10
+score[4] => LessThan3.IN10
+score[4] => LessThan4.IN10
+score[4] => LessThan5.IN10
+score[4] => LessThan6.IN10
+score[4] => LessThan7.IN10
+score[4] => LessThan8.IN10
+score[4] => LessThan9.IN10
+score[5] => LessThan0.IN9
+score[5] => LessThan1.IN9
+score[5] => LessThan2.IN9
+score[5] => LessThan3.IN9
+score[5] => LessThan4.IN9
+score[5] => LessThan5.IN9
+score[5] => LessThan6.IN9
+score[5] => LessThan7.IN9
+score[5] => LessThan8.IN9
+score[5] => LessThan9.IN9
+score[6] => LessThan0.IN8
+score[6] => LessThan1.IN8
+score[6] => LessThan2.IN8
+score[6] => LessThan3.IN8
+score[6] => LessThan4.IN8
+score[6] => LessThan5.IN8
+score[6] => LessThan6.IN8
+score[6] => LessThan7.IN8
+score[6] => LessThan8.IN8
+score[6] => LessThan9.IN8
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= <GND>
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|memoryUnit:inst
 REGISTER0_OUT[0] <= reg7:REGISTER0.Dout[0]
 REGISTER0_OUT[1] <= reg7:REGISTER0.Dout[1]
 REGISTER0_OUT[2] <= reg7:REGISTER0.Dout[2]
@@ -12,14 +174,14 @@ CLOCK => reg7:REGISTER2.CLK
 CLOCK => reg7:REGISTER3.CLK
 ENABLE => inst.IN0
 ENABLE => inst12.IN1
-WRITE => inst.IN1
+CLEAR => inst.IN1
 SELECT[0] => decoder2_to_4:inst8.b
 SELECT[0] => decoder2_to_4:inst7.b
 SELECT[0] => mux4_to_1_7b:inst4.sel[0]
 SELECT[1] => decoder2_to_4:inst8.a
 SELECT[1] => decoder2_to_4:inst7.a
 SELECT[1] => mux4_to_1_7b:inst4.sel[1]
-CLEAR => inst12.IN0
+WRITE => inst12.IN0
 LOAD[0] => reg7:REGISTER0.Din[0]
 LOAD[0] => reg7:REGISTER1.Din[0]
 LOAD[0] => reg7:REGISTER2.Din[0]
@@ -78,7 +240,7 @@ SELECTED_REGISTER[5] <= mux4_to_1_7b:inst4.out[5]
 SELECTED_REGISTER[6] <= mux4_to_1_7b:inst4.out[6]
 
 
-|memoryUnit|reg7:REGISTER0
+|main|memoryUnit:inst|reg7:REGISTER0
 CLK => Dout[0]~reg0.CLK
 CLK => Dout[1]~reg0.CLK
 CLK => Dout[2]~reg0.CLK
@@ -116,7 +278,7 @@ Dout[5] <= Dout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Dout[6] <= Dout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|memoryUnit|decoder2_to_4:inst8
+|main|memoryUnit:inst|decoder2_to_4:inst8
 en => y.OUTPUTSELECT
 en => y.OUTPUTSELECT
 en => y.OUTPUTSELECT
@@ -133,7 +295,7 @@ y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|memoryUnit|decoder2_to_4:inst7
+|main|memoryUnit:inst|decoder2_to_4:inst7
 en => y.OUTPUTSELECT
 en => y.OUTPUTSELECT
 en => y.OUTPUTSELECT
@@ -150,7 +312,7 @@ y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|memoryUnit|reg7:REGISTER1
+|main|memoryUnit:inst|reg7:REGISTER1
 CLK => Dout[0]~reg0.CLK
 CLK => Dout[1]~reg0.CLK
 CLK => Dout[2]~reg0.CLK
@@ -188,7 +350,7 @@ Dout[5] <= Dout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Dout[6] <= Dout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|memoryUnit|reg7:REGISTER2
+|main|memoryUnit:inst|reg7:REGISTER2
 CLK => Dout[0]~reg0.CLK
 CLK => Dout[1]~reg0.CLK
 CLK => Dout[2]~reg0.CLK
@@ -226,7 +388,7 @@ Dout[5] <= Dout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Dout[6] <= Dout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|memoryUnit|reg7:REGISTER3
+|main|memoryUnit:inst|reg7:REGISTER3
 CLK => Dout[0]~reg0.CLK
 CLK => Dout[1]~reg0.CLK
 CLK => Dout[2]~reg0.CLK
@@ -264,7 +426,7 @@ Dout[5] <= Dout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Dout[6] <= Dout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|memoryUnit|mux4_to_1_7b:inst4
+|main|memoryUnit:inst|mux4_to_1_7b:inst4
 a[0] => out.DATAA
 a[1] => out.DATAA
 a[2] => out.DATAA
@@ -321,5 +483,396 @@ out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[4] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[5] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[6] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|FSM:inst1
+Clock => CurrentState~2.DATAIN
+Reset => CurrentState.OUTPUTSELECT
+Reset => CurrentState.OUTPUTSELECT
+Reset => CurrentState.OUTPUTSELECT
+Reset => CurrentState.OUTPUTSELECT
+W => CurrentState.OUTPUTSELECT
+W => CurrentState.OUTPUTSELECT
+W => CurrentState.OUTPUTSELECT
+W => CurrentState.OUTPUTSELECT
+Address0 <= Address0.DB_MAX_OUTPUT_PORT_TYPE
+Address1 <= Address1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|seven_seg_decoder_7b:inst6
+score[0] => LessThan0.IN14
+score[0] => LessThan1.IN14
+score[0] => LessThan2.IN14
+score[0] => LessThan3.IN14
+score[0] => LessThan4.IN14
+score[0] => LessThan5.IN14
+score[0] => LessThan6.IN14
+score[0] => LessThan7.IN14
+score[0] => LessThan8.IN14
+score[0] => LessThan9.IN14
+score[1] => LessThan0.IN13
+score[1] => LessThan1.IN13
+score[1] => LessThan2.IN13
+score[1] => LessThan3.IN13
+score[1] => LessThan4.IN13
+score[1] => LessThan5.IN13
+score[1] => LessThan6.IN13
+score[1] => LessThan7.IN13
+score[1] => LessThan8.IN13
+score[1] => LessThan9.IN13
+score[2] => LessThan0.IN12
+score[2] => LessThan1.IN12
+score[2] => LessThan2.IN12
+score[2] => LessThan3.IN12
+score[2] => LessThan4.IN12
+score[2] => LessThan5.IN12
+score[2] => LessThan6.IN12
+score[2] => LessThan7.IN12
+score[2] => LessThan8.IN12
+score[2] => LessThan9.IN12
+score[3] => LessThan0.IN11
+score[3] => LessThan1.IN11
+score[3] => LessThan2.IN11
+score[3] => LessThan3.IN11
+score[3] => LessThan4.IN11
+score[3] => LessThan5.IN11
+score[3] => LessThan6.IN11
+score[3] => LessThan7.IN11
+score[3] => LessThan8.IN11
+score[3] => LessThan9.IN11
+score[4] => LessThan0.IN10
+score[4] => LessThan1.IN10
+score[4] => LessThan2.IN10
+score[4] => LessThan3.IN10
+score[4] => LessThan4.IN10
+score[4] => LessThan5.IN10
+score[4] => LessThan6.IN10
+score[4] => LessThan7.IN10
+score[4] => LessThan8.IN10
+score[4] => LessThan9.IN10
+score[5] => LessThan0.IN9
+score[5] => LessThan1.IN9
+score[5] => LessThan2.IN9
+score[5] => LessThan3.IN9
+score[5] => LessThan4.IN9
+score[5] => LessThan5.IN9
+score[5] => LessThan6.IN9
+score[5] => LessThan7.IN9
+score[5] => LessThan8.IN9
+score[5] => LessThan9.IN9
+score[6] => LessThan0.IN8
+score[6] => LessThan1.IN8
+score[6] => LessThan2.IN8
+score[6] => LessThan3.IN8
+score[6] => LessThan4.IN8
+score[6] => LessThan5.IN8
+score[6] => LessThan6.IN8
+score[6] => LessThan7.IN8
+score[6] => LessThan8.IN8
+score[6] => LessThan9.IN8
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= <GND>
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|seven_seg_decoder_7b:inst7
+score[0] => LessThan0.IN14
+score[0] => LessThan1.IN14
+score[0] => LessThan2.IN14
+score[0] => LessThan3.IN14
+score[0] => LessThan4.IN14
+score[0] => LessThan5.IN14
+score[0] => LessThan6.IN14
+score[0] => LessThan7.IN14
+score[0] => LessThan8.IN14
+score[0] => LessThan9.IN14
+score[1] => LessThan0.IN13
+score[1] => LessThan1.IN13
+score[1] => LessThan2.IN13
+score[1] => LessThan3.IN13
+score[1] => LessThan4.IN13
+score[1] => LessThan5.IN13
+score[1] => LessThan6.IN13
+score[1] => LessThan7.IN13
+score[1] => LessThan8.IN13
+score[1] => LessThan9.IN13
+score[2] => LessThan0.IN12
+score[2] => LessThan1.IN12
+score[2] => LessThan2.IN12
+score[2] => LessThan3.IN12
+score[2] => LessThan4.IN12
+score[2] => LessThan5.IN12
+score[2] => LessThan6.IN12
+score[2] => LessThan7.IN12
+score[2] => LessThan8.IN12
+score[2] => LessThan9.IN12
+score[3] => LessThan0.IN11
+score[3] => LessThan1.IN11
+score[3] => LessThan2.IN11
+score[3] => LessThan3.IN11
+score[3] => LessThan4.IN11
+score[3] => LessThan5.IN11
+score[3] => LessThan6.IN11
+score[3] => LessThan7.IN11
+score[3] => LessThan8.IN11
+score[3] => LessThan9.IN11
+score[4] => LessThan0.IN10
+score[4] => LessThan1.IN10
+score[4] => LessThan2.IN10
+score[4] => LessThan3.IN10
+score[4] => LessThan4.IN10
+score[4] => LessThan5.IN10
+score[4] => LessThan6.IN10
+score[4] => LessThan7.IN10
+score[4] => LessThan8.IN10
+score[4] => LessThan9.IN10
+score[5] => LessThan0.IN9
+score[5] => LessThan1.IN9
+score[5] => LessThan2.IN9
+score[5] => LessThan3.IN9
+score[5] => LessThan4.IN9
+score[5] => LessThan5.IN9
+score[5] => LessThan6.IN9
+score[5] => LessThan7.IN9
+score[5] => LessThan8.IN9
+score[5] => LessThan9.IN9
+score[6] => LessThan0.IN8
+score[6] => LessThan1.IN8
+score[6] => LessThan2.IN8
+score[6] => LessThan3.IN8
+score[6] => LessThan4.IN8
+score[6] => LessThan5.IN8
+score[6] => LessThan6.IN8
+score[6] => LessThan7.IN8
+score[6] => LessThan8.IN8
+score[6] => LessThan9.IN8
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= <GND>
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|seven_seg_decoder_7b:inst8
+score[0] => LessThan0.IN14
+score[0] => LessThan1.IN14
+score[0] => LessThan2.IN14
+score[0] => LessThan3.IN14
+score[0] => LessThan4.IN14
+score[0] => LessThan5.IN14
+score[0] => LessThan6.IN14
+score[0] => LessThan7.IN14
+score[0] => LessThan8.IN14
+score[0] => LessThan9.IN14
+score[1] => LessThan0.IN13
+score[1] => LessThan1.IN13
+score[1] => LessThan2.IN13
+score[1] => LessThan3.IN13
+score[1] => LessThan4.IN13
+score[1] => LessThan5.IN13
+score[1] => LessThan6.IN13
+score[1] => LessThan7.IN13
+score[1] => LessThan8.IN13
+score[1] => LessThan9.IN13
+score[2] => LessThan0.IN12
+score[2] => LessThan1.IN12
+score[2] => LessThan2.IN12
+score[2] => LessThan3.IN12
+score[2] => LessThan4.IN12
+score[2] => LessThan5.IN12
+score[2] => LessThan6.IN12
+score[2] => LessThan7.IN12
+score[2] => LessThan8.IN12
+score[2] => LessThan9.IN12
+score[3] => LessThan0.IN11
+score[3] => LessThan1.IN11
+score[3] => LessThan2.IN11
+score[3] => LessThan3.IN11
+score[3] => LessThan4.IN11
+score[3] => LessThan5.IN11
+score[3] => LessThan6.IN11
+score[3] => LessThan7.IN11
+score[3] => LessThan8.IN11
+score[3] => LessThan9.IN11
+score[4] => LessThan0.IN10
+score[4] => LessThan1.IN10
+score[4] => LessThan2.IN10
+score[4] => LessThan3.IN10
+score[4] => LessThan4.IN10
+score[4] => LessThan5.IN10
+score[4] => LessThan6.IN10
+score[4] => LessThan7.IN10
+score[4] => LessThan8.IN10
+score[4] => LessThan9.IN10
+score[5] => LessThan0.IN9
+score[5] => LessThan1.IN9
+score[5] => LessThan2.IN9
+score[5] => LessThan3.IN9
+score[5] => LessThan4.IN9
+score[5] => LessThan5.IN9
+score[5] => LessThan6.IN9
+score[5] => LessThan7.IN9
+score[5] => LessThan8.IN9
+score[5] => LessThan9.IN9
+score[6] => LessThan0.IN8
+score[6] => LessThan1.IN8
+score[6] => LessThan2.IN8
+score[6] => LessThan3.IN8
+score[6] => LessThan4.IN8
+score[6] => LessThan5.IN8
+score[6] => LessThan6.IN8
+score[6] => LessThan7.IN8
+score[6] => LessThan8.IN8
+score[6] => LessThan9.IN8
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= <GND>
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|binaryDisplay:inst3
+OVERFLOW <= RESULT[8].DB_MAX_OUTPUT_PORT_TYPE
+BinaryIn[0] => bcd_7b:inst.bin[0]
+BinaryIn[1] => bcd_7b:inst.bin[1]
+BinaryIn[2] => bcd_7b:inst.bin[2]
+BinaryIn[3] => bcd_7b:inst.bin[3]
+BinaryIn[4] => bcd_7b:inst.bin[4]
+BinaryIn[5] => bcd_7b:inst.bin[5]
+BinaryIn[6] => bcd_7b:inst.bin[6]
+TENS0 <= seven_seg_decoder:tens.A
+TENS1 <= seven_seg_decoder:tens.B
+TENS2 <= seven_seg_decoder:tens.C
+TENS3 <= seven_seg_decoder:tens.D
+TENS4 <= seven_seg_decoder:tens.E
+TENS5 <= seven_seg_decoder:tens.F
+TENS6 <= seven_seg_decoder:tens.G
+ONES0 <= seven_seg_decoder:ones.A
+ONES1 <= seven_seg_decoder:ones.B
+ONES2 <= seven_seg_decoder:ones.C
+ONES3 <= seven_seg_decoder:ones.D
+ONES4 <= seven_seg_decoder:ones.E
+ONES5 <= seven_seg_decoder:ones.F
+ONES6 <= seven_seg_decoder:ones.G
+
+
+|main|binaryDisplay:inst3|mux2_to_1_9b:inst7
+a[0] => out.DATAB
+a[1] => out.DATAB
+a[2] => out.DATAB
+a[3] => out.DATAB
+a[4] => out.DATAB
+a[5] => out.DATAB
+a[6] => out.DATAB
+a[7] => out.DATAB
+a[8] => out.DATAB
+b[0] => out.DATAA
+b[1] => out.DATAA
+b[2] => out.DATAA
+b[3] => out.DATAA
+b[4] => out.DATAA
+b[5] => out.DATAA
+b[6] => out.DATAA
+b[7] => out.DATAA
+b[8] => out.DATAA
+sel => out.OUTPUTSELECT
+sel => out.OUTPUTSELECT
+sel => out.OUTPUTSELECT
+sel => out.OUTPUTSELECT
+sel => out.OUTPUTSELECT
+sel => out.OUTPUTSELECT
+sel => out.OUTPUTSELECT
+sel => out.OUTPUTSELECT
+sel => out.OUTPUTSELECT
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[8] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|binaryDisplay:inst3|bcd_7b:inst
+bin[0] => bcd[0].DATAIN
+bin[1] => LessThan3.IN8
+bin[1] => Add3.IN8
+bin[1] => bcd.DATAA
+bin[2] => LessThan2.IN8
+bin[2] => Add2.IN8
+bin[2] => bcd.DATAA
+bin[3] => LessThan1.IN8
+bin[3] => Add1.IN8
+bin[3] => bcd.DATAA
+bin[4] => LessThan0.IN6
+bin[4] => Add0.IN6
+bin[4] => bcd.DATAA
+bin[5] => LessThan0.IN5
+bin[5] => Add0.IN5
+bin[5] => bcd.DATAA
+bin[6] => LessThan0.IN4
+bin[6] => Add0.IN4
+bin[6] => bcd.DATAA
+bcd[0] <= bin[0].DB_MAX_OUTPUT_PORT_TYPE
+bcd[1] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[2] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[3] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[4] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[5] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[6] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[7] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[8] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|binaryDisplay:inst3|seven_seg_decoder:tens
+x3 => Decoder0.IN0
+x2 => Decoder0.IN1
+x1 => Decoder0.IN2
+x0 => Decoder0.IN3
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|binaryDisplay:inst3|seven_seg_decoder:ones
+x3 => Decoder0.IN0
+x2 => Decoder0.IN1
+x1 => Decoder0.IN2
+x0 => Decoder0.IN3
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|bcd_2b:inst9
+a1 => Decoder0.IN0
+a1 => segments[0].DATAIN
+a0 => Decoder0.IN1
+a0 => segments[2].DATAIN
+segments[0] <= a1.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= a0.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= <GND>
+segments[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 
 

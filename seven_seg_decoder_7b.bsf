@@ -32,20 +32,6 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
-		(pt 0 48)
-		(input)
-		(text "en" (rect 0 0 9 12)(font "Arial" ))
-		(text "en" (rect 21 43 30 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "clear" (rect 0 0 18 12)(font "Arial" ))
-		(text "clear" (rect 21 59 39 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 1))
-	)
-	(port
 		(pt 152 32)
 		(output)
 		(text "A" (rect 0 0 8 12)(font "Arial" ))

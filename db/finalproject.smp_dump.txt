@@ -1,0 +1,7 @@
+
+State Machine - |main|FSM:inst1|CurrentState
+Name CurrentState.STATE_3 CurrentState.STATE_2 CurrentState.STATE_1 CurrentState.STATE_0 
+CurrentState.STATE_0 0 0 0 0 
+CurrentState.STATE_1 0 0 1 1 
+CurrentState.STATE_2 0 1 0 1 
+CurrentState.STATE_3 1 0 0 1 

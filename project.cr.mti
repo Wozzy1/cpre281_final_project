@@ -1,0 +1,99 @@
+X:/cpre281/finalproject/cpre281_final_project/decoder_2_to_4.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/decoder_2_to_4.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module decoder2_to_4
+
+Top level modules:
+	decoder2_to_4
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/reg7.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/reg7.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module reg7
+
+Top level modules:
+	reg7
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/mux2_to_1_7b.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/mux2_to_1_7b.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module mux2_to_1_7b
+
+Top level modules:
+	mux2_to_1_7b
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/mux2_1b.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/mux2_1b.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module mux2_1b
+
+Top level modules:
+	mux2_1b
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/Mux8_4b.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/Mux8_4b.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module Mux8_4b
+
+Top level modules:
+	Mux8_4b
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/mux2_to_1_9b.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/mux2_to_1_9b.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module mux2_to_1_9b
+
+Top level modules:
+	mux2_to_1_9b
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/mux4_to_1_7b.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/mux4_to_1_7b.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module mux4_to_1_7b
+
+Top level modules:
+	mux4_to_1_7b
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/binaryDisplay.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/binaryDisplay.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module binaryDisplay
+
+Top level modules:
+	binaryDisplay
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module seven_seg_decoder
+
+Top level modules:
+	seven_seg_decoder
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder7b.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module seven_seg_decoder_7b
+
+Top level modules:
+	seven_seg_decoder_7b
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/main.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/main.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module main
+
+Top level modules:
+	main
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder9b.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder9b.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module seven_seg_decoder_9b
+
+Top level modules:
+	seven_seg_decoder_9b
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/bcd_7b.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/bcd_7b.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module bcd_7b
+
+Top level modules:
+	bcd_7b
+
+} {} {}} X:/cpre281/finalproject/cpre281_final_project/memoryUnit.v {1 {vlog -work work -vopt -stats=none X:/cpre281/finalproject/cpre281_final_project/memoryUnit.v
+QuestaSim-64 vlog 2023.2 Compiler 2023.04 Apr 11 2023
+-- Compiling module memoryUnit
+
+Top level modules:
+	memoryUnit
+
+} {} {}}

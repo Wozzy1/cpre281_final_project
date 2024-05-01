@@ -15,7 +15,7 @@
 
 // PROGRAM		"Quartus Prime"
 // VERSION		"Version 22.1std.1 Build 917 02/14/2023 SC Standard Edition"
-// CREATED		"Sun Apr 28 14:30:32 2024"
+// CREATED		"Mon Apr 29 15:59:48 2024"
 
 module memoryUnit(
 	CLOCK,
@@ -60,9 +60,9 @@ assign	REGISTER3_OUT = SYNTHESIZED_WIRE_3;
 
 
 
-assign	SYNTHESIZED_WIRE_5 = ENABLE & WRITE;
+assign	SYNTHESIZED_WIRE_5 = ENABLE & CLEAR;
 
-assign	SYNTHESIZED_WIRE_4 = CLEAR & ENABLE;
+assign	SYNTHESIZED_WIRE_4 = WRITE & ENABLE;
 
 
 mux4_to_1_7b	b2v_inst4(

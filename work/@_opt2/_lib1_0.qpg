@@ -1,0 +1,667 @@
+m255
+K4
+z2
+Z0 !s12c _opt2
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+Z2 !s12c _opt
+R1
+Z3 !s12c _opt1
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R0
+R1
+R2
+R1
+R3
+R1
+R0
+R1
+R2
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R2
+R1
+R0
+R1
+R0
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R2
+R1
+!s11f vlog 2023.2 2023.04, Apr 11 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z4 dX:/cpre281/lab12/regfile
+T_opt
+!s110 1714434564
+V3AizYF4Tj<kWa=[A=g;<k1
+04 6 4 work bcd_7b fast 0
+=1-788cb53e2621-66303203-213-1270
+R1
+Z5 !s12b OEM100
+Z6 !s124 OEM100
+Z7 o-quiet -auto_acc_if_foreign -work work
+Z8 tCvgOpt 0
+n@_opt
+Z9 OL;O;2023.2;77
+R4
+T_opt1
+!s110 1714424411
+V7hUkK[T9[:<?`6^98>20R3
+04 10 4 work memoryUnit fast 0
+=1-b07b2527b5ca-66300a5b-18e-24f0
+R1
+R5
+R6
+R7
+R8
+n@_opt1
+R9
+R4
+T_opt2
+!s110 1714437791
+VIomOYz_2eGX]3eD>1>QK?3
+04 13 4 work binaryDisplay fast 0
+=1-788cb53e2621-66303e9f-34-278c
+R1
+R5
+R6
+R7
+R8
+n@_opt2
+R9
+vbcd_7b
+2X:/cpre281/finalproject/cpre281_final_project/bcd_7b.v
+!s110 1714437777
+!i10b 1
+!s100 9NJ?]9;fG_AaPE=6Mc0K]1
+IaZ@9BYZ5IN[?DWfnJ@hfO2
+Z10 dX:/cpre281/finalproject/cpre281_final_project
+w1714436341
+8X:/cpre281/finalproject/cpre281_final_project/bcd_7b.v
+FX:/cpre281/finalproject/cpre281_final_project/bcd_7b.v
+!i122 126
+L0 5 17
+Z11 VDg1SIo80bB@j0V0VzS_@n1
+Z12 OL;L;2023.2;77
+r1
+!s85 0
+31
+!i113 0
+Z13 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R8
+vbinaryDisplay
+Z14 2X:/cpre281/finalproject/cpre281_final_project/binaryDisplay.v
+Z15 !s110 1714437778
+!i10b 1
+!s100 0S5U`:`jAjA^VV1l<c@Cm2
+I3ga>dzR=VL:?FcaIolKOD1
+R10
+w1714437769
+Z16 8X:/cpre281/finalproject/cpre281_final_project/binaryDisplay.v
+Z17 FX:/cpre281/finalproject/cpre281_final_project/binaryDisplay.v
+!i122 127
+L0 20 109
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+nbinary@display
+vbusmux_0
+R14
+!s110 1714437762
+!i10b 1
+!s100 ?U69DPjj^F`25FRK@j<[52
+IgOP[gEan?cJVb_j?ji5gQ2
+R10
+w1714437551
+R16
+R17
+!i122 119
+L0 130 9
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+vbusmux_1
+R14
+Z18 !s110 1714436899
+!i10b 1
+!s100 e3VjnD3cbC8SR]<UE8L710
+IfS:e;bZ8a7lFk]ocaIG;z1
+R10
+Z19 w1714436890
+R16
+R17
+!i122 112
+L0 121 9
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+vcomparator7b
+2X:/cpre281/finalproject/cpre281_final_project/comparator7b.v
+!s110 1714185481
+!i10b 1
+!s100 Z;@O8JL1POJ=4DP;ae=KN3
+I62iY:CAhbiz<2Z9Gc`cAk0
+R10
+w1714082983
+8X:/cpre281/finalproject/cpre281_final_project/comparator7b.v
+FX:/cpre281/finalproject/cpre281_final_project/comparator7b.v
+!i122 35
+L0 4 11
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+vcomparator8b
+2X:/cpre281/finalproject/cpre281_final_project/comparator8b.v
+!s110 1714082750
+!i10b 1
+!s100 Z[i4[b1;@XaE>7d[N=Alb2
+I^F?e8O9h>7P>:_Nl2Xldh1
+R10
+w1714082561
+8X:/cpre281/finalproject/cpre281_final_project/comparator8b.v
+FX:/cpre281/finalproject/cpre281_final_project/comparator8b.v
+!i122 0
+L0 2 11
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+vdecoder2_to_4
+2X:/cpre281/finalproject/cpre281_final_project/decoder_2_to_4.v
+!s110 1714433589
+!i10b 1
+!s100 H]7F8f3[NkKkGV`e^?jXz2
+ImN2WzAjT:nBIid[QR>3lH3
+R10
+w1714245034
+8X:/cpre281/finalproject/cpre281_final_project/decoder_2_to_4.v
+FX:/cpre281/finalproject/cpre281_final_project/decoder_2_to_4.v
+!i122 98
+L0 2 20
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+vletterGate
+2X:/cpre281/finalproject/cpre281_final_project/letterGate.v
+!s110 1714184761
+!i10b 1
+!s100 DkEiCc:cgOVJ5_J^YhAGQ2
+I70CMIWS>hGbCE5P^1LL@f3
+R10
+w1714183825
+8X:/cpre281/finalproject/cpre281_final_project/letterGate.v
+FX:/cpre281/finalproject/cpre281_final_project/letterGate.v
+!i122 21
+L0 1 15
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+nletter@gate
+vLetterGenerator
+2X:/cpre281/finalproject/cpre281_final_project/LetterGenerator.v
+!s110 1714164502
+!i10b 1
+!s100 RNGBEJ5meTW0iD5Le[U`?3
+Id_IkR5PYX1E65Kh?H@V:93
+R10
+w1714164498
+8X:/cpre281/finalproject/cpre281_final_project/LetterGenerator.v
+FX:/cpre281/finalproject/cpre281_final_project/LetterGenerator.v
+!i122 12
+L0 1 84
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+n@letter@generator
+vletterGenerator
+2X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v
+Z20 !s110 1714184762
+!i10b 1
+!s100 5MhWK]A?eadlzEe2CibRi0
+I23H21^bfFM;oa:]bgBcHg0
+R10
+w1714184559
+8X:/cpre281/finalproject/cpre281_final_project/letterGenerator.v
+FX:/cpre281/finalproject/cpre281_final_project/letterGenerator.v
+!i122 22
+L0 20 219
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+nletter@generator
+vletterGeneratorBDF
+Z21 2X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v
+Z22 !s110 1714186547
+!i10b 1
+!s100 BVccl]lBBfR0Bh<k^H1Hc3
+IcgAg<RXA?5QkoXTY^KLb`1
+R10
+Z23 w1714186522
+Z24 8X:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v
+Z25 FX:/cpre281/finalproject/cpre281_final_project/letterGeneratorBDF.v
+!i122 38
+L0 20 237
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+nletter@generator@b@d@f
+vlpm_constant_0
+R14
+R18
+!i10b 1
+!s100 4gk<<[FGoTXoVe:HMP5_^2
+IM565Ioko@MBkW3:EW2N;H3
+R10
+R19
+R16
+R17
+!i122 112
+L0 131 6
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+vlpm_constant_1
+R21
+R22
+!i10b 1
+!s100 0aSI9beO^IGHWJ[QD4D;02
+IMQ=VKeMNkDg@B@V0caBgf2
+R10
+R23
+R24
+R25
+!i122 38
+L0 265 6
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+vlpm_constant_2
+R21
+R22
+!i10b 1
+!s100 gL1DN2R`H`e3nMoQCgffH3
+I>JJ0B^5KdadO][TVAPS<F0
+R10
+R23
+R24
+R25
+!i122 38
+L0 272 6
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+vlpm_constant_3
+R21
+R22
+!i10b 1
+!s100 RCPiBFlh@bNXk3E_BkMAA3
+I_VMkzL0WYNlfeNCUO<IZB2
+R10
+R23
+R24
+R25
+!i122 38
+L0 279 6
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+vlpm_constant_4
+R21
+R22
+!i10b 1
+!s100 3QDL_?L:h3cCIV_gfNNFm3
+I0KE?If@97]?;V^2?n7o7O0
+R10
+R23
+R24
+R25
+!i122 38
+L0 286 6
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+vlpm_constant_5
+R21
+R22
+!i10b 1
+!s100 Z<dk1nZ=_[18`AoS:eUXK2
+I_X]_ZNAXlED9MDjN;6l7N1
+R10
+R23
+R24
+R25
+!i122 38
+L0 293 6
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+vlpm_constant_6
+R21
+R22
+!i10b 1
+!s100 [8Cb=C]D:dlLIb2?DITLC2
+I05ok=<N>0[G<R5<5?hhhb1
+R10
+R23
+R24
+R25
+!i122 38
+L0 300 6
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+vlpm_constant_7
+R21
+R22
+!i10b 1
+!s100 JH^_2ZB:HA;5KgCg3XUVh3
+I6VUCHSJ>3alkCWoQ?6lM`3
+R10
+R23
+R24
+R25
+!i122 38
+L0 307 6
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+vlpm_constant_8
+R21
+R22
+!i10b 1
+!s100 6SW^949G95TeT=cRMSLl=3
+IJ=RHfg;^<4U718_hKjhkl3
+R10
+R23
+R24
+R25
+!i122 38
+L0 314 6
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+vlpm_constant_9
+R21
+R22
+!i10b 1
+!s100 87Wc;6nALXbMi_UR4V0o`2
+Ik:QD^SzcaYYna=^Xz=TVJ0
+R10
+R23
+R24
+R25
+!i122 38
+L0 321 6
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+vmemoryUnit
+2X:/cpre281/finalproject/cpre281_final_project/memoryUnit.v
+Z26 !s110 1714433590
+!i10b 1
+!s100 Q_QIMMW_j8WWiN6l2aYTN3
+I9KBX6z?1ogFFKG4TID]7d2
+R10
+w1714424388
+8X:/cpre281/finalproject/cpre281_final_project/memoryUnit.v
+FX:/cpre281/finalproject/cpre281_final_project/memoryUnit.v
+!i122 99
+L0 20 104
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+nmemory@unit
+vmux2_1b
+2X:/cpre281/finalproject/cpre281_final_project/mux2_1b.v
+R20
+!i10b 1
+!s100 eJ1eHNk6aZ9ihdWUf6k_m2
+IYd?>D?P7gHG_z?RcMjhH@1
+R10
+w1714184398
+8X:/cpre281/finalproject/cpre281_final_project/mux2_1b.v
+FX:/cpre281/finalproject/cpre281_final_project/mux2_1b.v
+!i122 23
+L0 20 30
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+vmux2_to_1_9b
+2X:/cpre281/finalproject/cpre281_final_project/mux2_to_1_9b.v
+R15
+!i10b 1
+!s100 5Pfh<EZ>:N[]@[hSz>Czf3
+II:oc`SdQRoG9^Xo>lRK4@0
+R10
+w1714437673
+8X:/cpre281/finalproject/cpre281_final_project/mux2_to_1_9b.v
+FX:/cpre281/finalproject/cpre281_final_project/mux2_to_1_9b.v
+!i122 129
+L0 1 9
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+vmux4_to_1_7b
+2X:/cpre281/finalproject/cpre281_final_project/mux4_to_1_7b.v
+R26
+!i10b 1
+!s100 S81Qh:nB_T1CLgNP>27EL1
+I]INU7n3Nbl;j40[6_S<<o3
+R10
+w1714243204
+8X:/cpre281/finalproject/cpre281_final_project/mux4_to_1_7b.v
+FX:/cpre281/finalproject/cpre281_final_project/mux4_to_1_7b.v
+!i122 100
+L0 1 11
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+vreg7
+2X:/cpre281/finalproject/cpre281_final_project/reg7.v
+R26
+!i10b 1
+!s100 RzUkQlJZPzLE^8@cJJC2G2
+I<d?zfW?RNQgTIoLG;fK4V1
+R10
+w1714423539
+8X:/cpre281/finalproject/cpre281_final_project/reg7.v
+FX:/cpre281/finalproject/cpre281_final_project/reg7.v
+!i122 102
+L0 1 12
+R11
+R12
+r1
+!s85 0
+31
+!i113 0
+R13
+R8
+vseven_seg_decoder
+2X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder.v
+R15
+!i10b 1
+!s100 G:7^14>b`I^cHcGn`g<F00
+I1lB7K=h2h7ZOLCf`9`@b=2
+R10
+w1714435509
+8X:/cpre281/finalproject/cpre281_final_project/seven_seg_decoder.v
+FX:/cpre281/finalproject
